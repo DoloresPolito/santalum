@@ -1,9 +1,9 @@
 'use client';
 import { useEffect } from 'react';
 import Lenis from 'lenis'
-import Intro from '@/components/Intro';
-import Description from '@/components/Description';
-import Section from '@/components/Section';
+import Intro from '@/structure/Intro';
+import Description from '@/structure/Description/Description';
+import Section from '@/structure/Section';
 export default function Home() {
 
   useEffect( () => {

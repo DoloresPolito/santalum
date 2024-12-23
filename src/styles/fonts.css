@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'HattonMedium';
+    src: url('/fonts/PPHatton/PPHatton-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HattonLight';
+    src: url('/fonts/PPHatton/PPHatton-Ultralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
