@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Intro from "@/structure/Intro/Intro";
-import Description from "@/structure/Description/Description";
+import Description from "@/structure/Description";
 import Section from "@/structure/Section/Section";
 export default function Home() {
   useEffect(() => {
