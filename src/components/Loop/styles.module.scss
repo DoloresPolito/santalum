@@ -1,0 +1,60 @@
+.loopSection {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f3e8dd;
+  background-color: #f0ebe3;
+  .marquee {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &.reverse .marquee {
+    animation-direction: reverse;
+  }
+
+  .logoWrapper {
+    margin-left: 5vh;
+    position: relative;
+    background-color: #f3e8dd;
+    background-color: #f0ebe3;
+    width: 30vw;
+    height: 16vh;
+    max-height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo {
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    height: 2vh;
+    width: 2vh;
+  }
+
+  p {
+    font-family: "HattonLight";
+    font-size: 2.2vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: #26221f;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 const phrase =
-  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.";
+  "En el equipo de profesionales que formamos Clínica Santalum creemos que el bienestar de las personas pasa por una reconciliación entre su estado anímico y su aspecto físico. Para ello ofrecemos un cuidado y una atención especial en cada uno de nuestros tratamientos para conseguir resultados bellos y naturales, y para que puedas presentar un aspecto cuidado y saludable, en definitiva, para que te sientas bien.";
 
 export default function Index() {
   let refs = useRef([]);
@@ -59,6 +59,10 @@ export default function Index() {
 
   return (
     <main ref={container} className={styles.main}>
+      <div className={styles.top} >
+        <p>SOBRE NOSOTROS</p>
+
+      </div>
       <div ref={body} className={styles.body}>
         {splitWords(phrase)}
       </div>

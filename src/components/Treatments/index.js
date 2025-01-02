@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 // import Button from "@/components/Button";
-
+import Loop from "../Loop";
 
 export default function Treatments() {
   const items = [
@@ -36,6 +36,9 @@ export default function Treatments() {
   return (
     <>
       <div className={styles.section}>
+      <div className={styles.logoscontainer}>
+        <Loop reverse="true" />
+      </div>
         <div className={styles.container}>
           {items.map((item) => (
             <motion.div

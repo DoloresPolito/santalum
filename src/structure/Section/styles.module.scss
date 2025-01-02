@@ -1,0 +1,45 @@
+.section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+
+    .relative {
+        position: relative;
+        z-index: 10;
+        padding: 20px;
+        color: white;
+        mix-blend-mode: difference; // Diferencia en mezcla
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        // Textos secundarios
+       
+      }
+    
+      // Contenedor de la imagen de fondo
+      .fixed {
+        position: fixed;
+        top: -10vh;
+        left: 0;
+        height: 120vh;
+        width: 100%;
+    
+        // Imagen con parallax
+        .imagecontainer {
+          position: relative;
+          width: 100%;
+          height: 100%;
+    
+          img {
+            object-fit: cover; // Ajusta la imagen al contenedor
+          }
+        }}
+    
+}

@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
-import Background from '../../public/images/fondo1.jpg';
+import Background from '../../../public/images/fondo1.jpg';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
+import styles from "./styles.module.scss"
 
 export default function Intro() {
     const container = useRef();
@@ -14,8 +15,8 @@ export default function Intro() {
     const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"])
   
     return (
-      <div className='h-screen overflow-hidden'>
-        <motion.div style={{y}} className='relative h-full'>
+      <div className={styles.section}>
+        <motion.div style={{y}} className={styles.relative}>
           <Image src={Background} fill alt="image" style={{objectFit: "cover"}}/>
         </motion.div>
       </div>

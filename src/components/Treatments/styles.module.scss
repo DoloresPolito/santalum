@@ -3,10 +3,29 @@
   width: 100vw;
   display: flex;
   z-index: 10000;
-  margin-top: 5vh;
+  flex-direction: column;
   @media only screen and (max-width: 750px) {
     height: auto;
   }
+
+  // .logoscontainer {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   height: auto;
+  //   padding-bottom: 12vh;
+
+  //   p{
+  //     h2 {
+  //       margin-bottom: 1rem;
+  //       font-family: "HattonLight";
+  //       font-size: 6vh;
+  //       text-align: center;
+  //       text-transform: uppercase;
+  //       padding: 0px 7vw;
+  //       color: #26221F;
+  //   }}
+  // }
 
   .container {
     display: flex;
