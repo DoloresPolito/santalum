@@ -7,7 +7,7 @@ import gsap from "gsap";
 const phrase =
   "En el equipo de profesionales que formamos Clínica Santalum creemos que el bienestar de las personas pasa por una reconciliación entre su estado anímico y su aspecto físico. Para ello ofrecemos un cuidado y una atención especial en cada uno de nuestros tratamientos para conseguir resultados bellos y naturales, y para que puedas presentar un aspecto cuidado y saludable, en definitiva, para que te sientas bien.";
 
-export default function Index() {
+export default function SplitWords() {
   let refs = useRef([]);
   const body = useRef(null);
   const container = useRef(null);
