@@ -13,14 +13,14 @@
     .line {
       width: 50px;
       height: 1px;
-      background-color: grey;
+      background-color: #62685e;
 
       transition: all 0.3s ease;
   
       // Para cuando el menú está cerrado, las líneas son horizontales
       &:nth-of-type(1) {
         transform-origin: center;
-        background-color: grey;
+        background-color: #62685e;
       }
   
       &:nth-of-type(2) {

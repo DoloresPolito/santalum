@@ -5,6 +5,7 @@ import Intro from "@/structure/Intro";
 import Description from "@/structure/Description";
 import Section from "@/structure/Section";
 import FaqsSection from "@/components/FaqsSection";
+import Treatments from "@/components/Treatments";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -22,8 +23,8 @@ export default function Home() {
       <Intro />
       <Description />
       <Section />
-      <div className="h-screen"></div>
-      <FaqsSection/>
+      <Treatments />
+      <FaqsSection />
     </main>
   );
 }

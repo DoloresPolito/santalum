@@ -134,7 +134,7 @@
           }
 
           p {
-            color: #e6e6e6;
+            color: #f0ebe3;
             font-size: 2vh;
             font-family: "HattonLight";
           }
@@ -143,7 +143,7 @@
             background-color: #e6e6e6;
 
             p {
-              color: white;
+              color: #f0ebe3;
             }
           }
           img {
@@ -166,7 +166,7 @@
           }
 
           .circle {
-            background-color: #f4f4f4;
+            background-color:#f0ebe3;;
             height: 7vh;
             width: 7vh;
             border-radius: 50%;
@@ -191,9 +191,10 @@
       justify-content: center;
 
       h1 {
-        color: #e6e6e6;
         font-family: "HattonLight";
         font-size: 20vw;
+        color: #f0ebe3;
+
       }
     }
   }

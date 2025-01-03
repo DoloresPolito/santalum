@@ -64,7 +64,11 @@ export default function SplitWords() {
 
       </div>
       <div ref={body} className={styles.body}>
-        {splitWords(phrase)}
+        <p>
+        {phrase}
+        </p>
+        {/* {splitWords(phrase)} */}
+
       </div>
     </main>
   );

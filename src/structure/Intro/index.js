@@ -6,6 +6,7 @@ import { useRef } from "react";
 import styles from "./styles.module.scss";
 import Header from "../../components/Header";
 import HeaderContainer from "../HeaderContainer";
+import SwiperHero from "@/components/SwiperHero";
 export default function Intro() {
   const container = useRef();
   const { scrollYProgress } = useScroll({
@@ -19,14 +20,15 @@ export default function Intro() {
     <div className={styles.section}>
       <HeaderContainer />
       <Header />
-      <motion.div style={{ y }} className={styles.relative}>
+      {/* <motion.div style={{ y }} className={styles.relative}>
         <Image
           src={Background}
           fill
           alt="image"
           style={{ objectFit: "cover" }}
         />
-      </motion.div>
+      </motion.div> */}
+      <SwiperHero/>
     </div>
   );
 }
