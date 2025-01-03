@@ -9,7 +9,7 @@ export default function Description() {
       <div className={styles.logoscontainer}>
         <Loop reverse="true" />
       </div>
-      <SplitWords />
+      {/* <SplitWords /> */}
 
 
 

@@ -14,6 +14,8 @@ export const AccordionItem = ({
   return (
     <div className={styles.card}>
       <div onClick={() => handleToggle(id)} className={styles.header}>
+
+        {/* <h1>{id}</h1> */}
         {header}
 
         {/* Flecha animada */}

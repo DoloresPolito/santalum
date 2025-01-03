@@ -10,7 +10,7 @@ export default function Treatments() {
   const items = [
     {
       id: 1,
-      title: "CUERPO",
+      title: "Arrugas",
       imageUrl: "/images/destacados/01.png",
       delay: 0.3,
       link: "/cuerpo",
@@ -18,20 +18,20 @@ export default function Treatments() {
     {
       id: 2,
       title: "CARA",
-      imageUrl: "/images/destacados/02.png",
+      imageUrl: "/images/destacados/06.png",
       delay: 0.5,
       link: "/cara",
     },
     {
       id: 3,
-      title: "CAPILAR",
+      title: "Flacidez",
       imageUrl: "/images/destacados/03.png",
       delay: 0.7,
       link: "/capilar",
     },
     {
       id: 2,
-      title: "CARA",
+      title: "Piel",
       imageUrl: "/images/destacados/04.png",
       delay: 0.5,
       link: "/cara",

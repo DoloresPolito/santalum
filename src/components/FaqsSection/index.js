@@ -1,5 +1,5 @@
 "use client";
-import { useState} from "react";
+import { useState } from "react";
 import AccordionItem from "@/components/AccordionItem";
 import styles from "./styles.module.scss";
 import { useAnimation } from "framer-motion";
@@ -53,8 +53,19 @@ export default function FaqsSection() {
       faq: "¿Cuáles son los tratamientos estéticos más demandados?",
       ans: "Los tratamientos faciales más solicitados son el aumento de labios y aquellos relacionados con el envejecimiento de la piel, como la toxina botulínica o el ácido hialurónico. Por otro lado, entre los tratamientos corporales más demandados resaltan la depilación láser, los tratamientos anticelulitis y aquellos que luchan contra la grasa localizada.",
     },
-  ];
 
+    // {
+    //   id: 9,
+    //   faq: "¿Qué tratamientos quirúrgicos son más solicitados?",
+    //   ans: "Dentro de la cirugía estética, las operaciones estéticas más populares son el aumento de pecho, la liposucción y la abdominoplastia.",
+    // },
+
+    {
+      id: 10,
+      faq: "¿Dónde es mejor realizarse un tratamiento estético?",
+      ans: "Ante el boom de la medicina estética, numerosos centros han abierto sus puertas. Llueven las promociones, pero ¿son centros de confianza? A la hora de elegir un centro para realizar un tratamiento, debes comprobar que cuenten con expertos en medicina estética y tecnología certificada. En nuestro centro de estética en Alcalá de Henares, podemos asesorarte y dar respuesta a las preguntas sobre medicina estética que tengas. Ven a conocernos.",
+    },
+  ];
 
   return (
     <>
@@ -72,8 +83,6 @@ export default function FaqsSection() {
               content={question.ans}
             />
           ))}
-
-
         </div>
       </div>
     </>
