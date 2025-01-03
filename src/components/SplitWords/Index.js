@@ -4,10 +4,10 @@ import styles from "./styles.module.scss";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import gsap from "gsap";
 
-const phrase =
-  "En el equipo de profesionales que formamos Clínica Santalum creemos que el bienestar de las personas pasa por una reconciliación entre su estado anímico y su aspecto físico. Para ello ofrecemos un cuidado y una atención especial en cada uno de nuestros tratamientos para conseguir resultados bellos y naturales, y para que puedas presentar un aspecto cuidado y saludable, en definitiva, para que te sientas bien.";
-
 export default function SplitWords() {
+  const phrase =
+    "En el equipo de profesionales que formamos Clínica Santalum creemos que el bienestar de las personas pasa por una reconciliación entre su estado anímico y su aspecto físico. Para ello ofrecemos un cuidado y una atención especial en cada uno de nuestros tratamientos para conseguir resultados bellos y naturales, y para que puedas presentar un aspecto cuidado y saludable, en definitiva, para que te sientas bien.";
+
   // let refs = useRef([]);
   // const body = useRef(null);
   // const container = useRef(null);
@@ -58,21 +58,19 @@ export default function SplitWords() {
   // };
 
   return (
-    <main 
-    // ref={container} 
-    className={styles.main}>
-      <div className={styles.top} >
+    <main
+      // ref={container}
+      className={styles.main}
+    >
+      <div className={styles.top}>
         <p>SOBRE NOSOTROS</p>
-
       </div>
       <div
-      //  ref={body} 
-      className={styles.body}>
-        <p>
-        {phrase}
-        </p>
+        //  ref={body}
+        className={styles.body}
+      >
+        <p>{phrase}</p>
         {/* {splitWords(phrase)} */}
-
       </div>
     </main>
   );
