@@ -1,13 +1,13 @@
 .header{
-    position: fixed;
-    right: 50px;
-    top: 50px;
+    position: absolute;
+    right: 5vh;
+    top: 1.2vh;
     z-index: 9999; 
     .menu{
-        width: 480px;
-        height: 650px;
-        background-color:#e1ded8;
-        border-radius: 25px;
+        width: 30vh;
+        height: 60vh;
+
+        border-radius: 2vh;
         position: relative;
         z-index: 1; 
     }

@@ -9,8 +9,10 @@ const menu = {
     open: {
         width: "480px",
         height: "650px",
-        top: "-25px",
+        top: "-5px",
         right: "-25px",
+        backgroundColor: "#e1ded8",
+   
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1]}
     },
     closed: {
@@ -18,6 +20,7 @@ const menu = {
         height: "40px",
         top: "0px",
         right: "0px",
+        backgroundColor: "transparent", 
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1]}
     }
 }

@@ -1,0 +1,200 @@
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #62685e;
+
+  .container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.2px solid #a1a1a1;
+
+    .top {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40vh;
+      @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+
+      .cont1 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+
+        justify-content: center;
+        @media only screen and (max-width: 1000px) {
+          align-items: center;
+          width: 100%;
+          margin-top: 4vh;
+        }
+
+        h4 {
+          padding-bottom: 5vh;
+          font-weight: 300;
+          color: #e6e6e6;
+          font-family: "HattonLight";
+          font-size: 3vh;
+        }
+
+        p {
+          color: #a1a1a1;
+          font-family: var(--font-montserrat), sans-serif;
+          font-size: 2vh;
+          @media only screen and (max-width: 1000px) {
+            text-align: center;
+          }
+        }
+      }
+
+      .cont2 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+        }
+        .line1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 8vh;
+          @media only screen and (max-width: 1000px) {
+            margin-bottom: 2vh;
+          }
+
+          @media only screen and (max-width: 500px) {
+            flex-direction: column;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+          }
+
+          p {
+            color: #e6e6e6;
+            padding: 5vh;
+            font-size: 3vh;
+            font-family: "HattonLight";
+
+            @media only screen and (max-width: 500px) {
+              padding: 0;
+              text-align: center;
+              padding-top: 2vh;
+            }
+          }
+        }
+
+        .line2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            color: #a1a1a1;
+            font-family: var(--font-montserrat), sans-serif;
+            text-align: center;
+            font-size: 2.3vh;
+          }
+        }
+      }
+
+      .cont3 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+          margin-top: 4vh;
+        }
+
+        .buttoncontainer {
+          display: flex;
+          height: auto;
+          width: 20vh;
+          border: 1px solid #e6e6e6;
+          border-radius: 10px;
+          padding: 1.6vh 2vh;
+          align-items: center;
+          margin-bottom: 4vh;
+          @media only screen and (max-width: 1000px) {
+            margin-bottom: 2vh;
+          }
+
+          p {
+            color: #e6e6e6;
+            font-size: 2vh;
+            font-family: "HattonLight";
+          }
+
+          &:hover {
+            background-color: #e6e6e6;
+
+            p {
+              color: white;
+            }
+          }
+          img {
+            height: 2vh;
+            width: auto;
+            margin-left: 1.5vh;
+          }
+        }
+
+        .socialmediacontainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 10vh;
+          width: 50%;
+
+          @media only screen and (max-width: 1000px) {
+            justify-content: center;
+          }
+
+          .circle {
+            background-color: #f4f4f4;
+            height: 7vh;
+            width: 7vh;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width: 1000px) {
+              margin: 2vh;
+            }
+
+            img {
+              height: 3.5vh;
+              width: 3.5vh;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        color: #e6e6e6;
+        font-family: "HattonLight";
+        font-size: 20vw;
+      }
+    }
+  }
+}

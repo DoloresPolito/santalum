@@ -1,6 +1,8 @@
 import "./globals.css";
-import Header from "../components/Header";
+
 import "../styles/fonts.css";
+import NewFooter from "@/structure/Footer";
+
 export const metadata = {
   title: "Santalum",
   description: "Medicina estética",
@@ -10,8 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>
-        {children}</body>
+  
+        {children}
+        <NewFooter/>
+        </body>
     </html>
   );
 }
