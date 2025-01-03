@@ -73,6 +73,7 @@
       min-height: 50vh;
       max-height: 50vh;
       min-width: 33.5vw;
+      object-fit: cover;
       @media only screen and (max-width: 750px) {
         object-fit: cover; // Cubrir el contenedor sin distorsionar
         max-height: 55vh; // Limitar la altura máxima

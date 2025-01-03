@@ -11,38 +11,38 @@ export default function Treatments() {
     {
       id: 1,
       title: "CUERPO",
-      imageUrl: "/images/treatments/t1.png",
+      imageUrl: "/images/destacados/01.png",
       delay: 0.3,
       link: "/cuerpo",
     },
     {
       id: 2,
       title: "CARA",
-      imageUrl: "/images/treatments/t2.png",
+      imageUrl: "/images/destacados/02.png",
       delay: 0.5,
       link: "/cara",
     },
     {
       id: 3,
       title: "CAPILAR",
-      imageUrl: "/images/treatments/t3.png",
+      imageUrl: "/images/destacados/03.png",
       delay: 0.7,
       link: "/capilar",
     },
     {
       id: 2,
       title: "CARA",
-      imageUrl: "/images/treatments/t2.png",
+      imageUrl: "/images/destacados/04.png",
       delay: 0.5,
       link: "/cara",
     },
-    {
-      id: 3,
-      title: "CAPILAR",
-      imageUrl: "/images/treatments/t3.png",
-      delay: 0.7,
-      link: "/capilar",
-    },
+    // {
+    //   id: 3,
+    //   title: "CAPILAR",
+    //   imageUrl: "/images/destacados/05.png",
+    //   delay: 0.7,
+    //   link: "/capilar",
+    // },
   ];
 
   return (
