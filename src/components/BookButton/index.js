@@ -8,8 +8,8 @@ const BookButton = () => {
   return (
     <motion.button
       className={styles.button}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      // onHoverStart={() => setIsHovered(true)}
+      // onHoverEnd={() => setIsHovered(false)}
       whileHover="hover"
       initial="rest"
       animate="rest"
