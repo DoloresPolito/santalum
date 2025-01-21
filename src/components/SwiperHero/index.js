@@ -7,46 +7,43 @@ import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-// import Button from "../../components/Button";
-// import AnimatedDiv from "../../components/AnimatedDiv";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function SwiperHero() {
   const slides = [
     {
       title: "TRATAMIENTOS DE CARA",
-      text: "Técnicas avanzadas que combinan arte y ciencia para realzar la belleza natural, mejorar la apariencia y corregir imperfecciones, logrando resultados estéticos armoniosos y personalizados.",
-      src: "cara1.png",
+      text: "Cuidados especializados que revitalizan la piel, suavizan líneas de expresión y realzan los rasgos faciales, brindando un aspecto fresco y natural.",
+      src: "carahero.mp4",
       background: "#62685e",
       link: "/cirugia-plastica",
     },
     {
       title: "TRATAMIENTOS DE CUERPO",
-      text: "Procedimientos especializados que restauran la función y la apariencia del cuerpo tras lesiones, cirugías o malformaciones congénitas, devolviendo confianza y mejorando la calidad de vida.",
-      src: "cuerpo.png",
+      text: "Tratamientos corporales diseñados para esculpir, tonificar y mejorar la apariencia física, utilizando técnicas avanzadas que garantizan resultados naturales y efectivos.",
+      src: "video1.mp4",
       background: "#9d8b74",
       link: "/cirugia-reparadora",
     },
     {
       title: "TRATAMIENTOS CAPILARES",
-      text: "Soluciones estéticas avanzadas que mejoran la apariencia sin necesidad de cirugía, utilizando técnicas mínimamente invasivas para rejuvenecer la piel, remodelar el cuerpo y realzar la belleza natural de forma sutil y efectiva.",
-      src: "cara2.png",
+      text: "Tratamientos capilares personalizados para fortalecer, revitalizar y estimular el crecimiento del cabello, utilizando tecnologías avanzadas y soluciones innovadoras que recuperan su salud, brillo y densidad de forma natural y efectiva.",
+      src: "capilarhero.mp4",
       background: "#242424",
       link: "/no-quirurgicos",
-    }
+    },
   ];
 
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 750);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 750);
+  //   };
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <>
@@ -56,15 +53,11 @@ export default function SwiperHero() {
             <Swiper
               loop={true}
               speed={1000}
-              parallax={true}
+              // parallax={false}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
               }}
-              // navigation={{
-              //   nextEl: ".swiper-button-next",
-              //   prevEl: ".swiper-button-prev",
-              // }}
               modules={[Parallax, Pagination, Navigation, Autoplay]}
               className={styles.mySwiper}
             >
@@ -75,9 +68,9 @@ export default function SwiperHero() {
                   </SwiperSlide>
                 );
               })}
-              {isMobile ? (
+              {/* {isMobile ? (
                 <></>
-              ) : (
+              ) : ( */}
                 <>
                   {/* <div
                     className="swiper-button-next"
@@ -88,7 +81,7 @@ export default function SwiperHero() {
                     style={{ color: "#F5F4F4" }}
                   ></div> */}
                 </>
-              )}
+              {/* )} */}
             </Swiper>
           </div>
         </div>
@@ -102,29 +95,33 @@ const Slide = ({ slide }) => {
     <>
       <div
         className={styles.slide}
-        style={{ backgroundColor: slide.background }}
+        // style={{ backgroundColor: slide.background }}
       >
         <div className={styles.textcontainer}>
           <div className={styles.inside}>
-            {/* <AnimatedDiv delay={0}> */}
-              <div className={styles.title} data-swiper-parallax="-300">
-                {slide.title}
-              </div>{" "}
-            {/* </AnimatedDiv>
-            <AnimatedDiv delay={0.3}> */}
-              <div className={styles.text} data-swiper-parallax="-100">
-                <p>{slide.text}</p>
-              </div>
-            {/* </AnimatedDiv> */}
-            {/* <AnimatedDiv delay={0.4}>
-              <Link href={slide.link}>
-                <Button color={slide.background} difbutton={slide.difbutton} />
-              </Link>
-            </AnimatedDiv> */}
+            <div className={styles.title} data-swiper-parallax="-300">
+              {slide.title}
+            </div>{" "}
+            <div className={styles.text} data-swiper-parallax="-100">
+              <p>{slide.text}</p>
+            </div>
           </div>
         </div>
+<div className={styles.column}>
 
-        <motion.div
+
+        <div className={styles.videocontainer}>
+            <video
+              src={`/images/nuevas/${slide.src}`}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className={styles.video}
+            />
+          </div>
+          </div>
+        {/* <motion.div
           className={styles.imagecontainer}
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -136,7 +133,7 @@ const Slide = ({ slide }) => {
             width={600}
             height={700}
           />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

@@ -1,13 +1,15 @@
 .header{
     position: absolute;
-    right: 5vh;
-    top: 0vh;
+    right: 15vh;
+    top: 5vh;
     z-index: 9999; 
+    display: flex;
     .menu{
         width: 30vh;
         height: 100vh;
         position: relative;
         z-index: 1; 
+
    
     }
 }

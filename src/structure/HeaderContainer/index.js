@@ -13,7 +13,7 @@ export default function HeaderContainer() {
         <BookButton />
    
       </div>
-      <motion.div initial="initial" className={styles.background}></motion.div>
+      {/* <motion.div initial="initial" className={styles.background}></motion.div> */}
 
     </div>
        </>

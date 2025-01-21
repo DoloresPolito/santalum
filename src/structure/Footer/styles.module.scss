@@ -5,7 +5,8 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: #62685e;
+  // background-color: #62685e;
+  background-color: #39442b;
 
   .container {
     width: 95%;
@@ -166,7 +167,7 @@
           }
 
           .circle {
-            background-color:#f0ebe3;;
+            // background-color: #f0ebe3;
             height: 7vh;
             width: 7vh;
             border-radius: 50%;
@@ -188,13 +189,54 @@
 
     .bottom {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      height: 30vh;
+      border-bottom: 0.5px solid #f0ebe3;
 
       h1 {
         font-family: "HattonLight";
-        font-size: 20vw;
+        font-size: 13vh;
         color: #f0ebe3;
+      }
 
+      .leftcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-top: 7vh;
+        width: 30%;
+
+        p {
+          font-family: "HattonLight";
+          font-size: 4vh;
+          color: #f0ebe3;
+        }
+      }
+    }
+
+    .top2 {
+      height: 10vh;
+      border-top: 0.5px solid #f0ebe3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: "HattonLight";
+        font-size: 2.5vh;
+        color: #f0ebe3;
+        
+      }
+
+      .left {
+        width: 50%;
+      }
+      .right {
+        width: 50%;
+       text-align: end;
       }
     }
   }

@@ -1,34 +1,42 @@
-import Image from 'next/image';
-import Background from '../../../public/images/fondo.png';
-import { useScroll, useTransform, motion } from 'framer-motion';
-import { useRef } from 'react';
-import styles from "./styles.module.scss"
+import Image from "next/image";
+import Background from "../../../public/images/h1.jpg";
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
+import styles from "./styles.module.scss";
 export default function Section() {
-    const container = useRef();
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ["start end", 'end start']
-    })
-    const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const container = useRef();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
-    return (
-        <div
-        ref={container} 
-        className={styles.section}
-        // className='relative flex items-center justify-center h-screen overflow-hidden'
-        style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
-        >
-        {/* <div className='relative z-10 p-20 mix-blend-difference text-white w-full h-full flex flex-col justify-between'> */}
-        <div className={styles.relative}>
-            {/* <p className='w-[50vw] text-[2vw] self-end uppercase mix-blend-difference'>Beauty and quality need the right time to be conceived and realised even in a world that is in too much of a hurry.</p> */}
-            <p className={styles.texto}>Descubre tu mejor versión con tratamientos personalizados para tu rostro, cuerpo y cabello.</p>
-        </div>
-        {/* <div className='fixed top-[-10vh] left-0 h-[120vh] w-full'> */}
-        <div className={styles.fixed}>
-            <motion.div style={{y}} className={styles.imagecontainer}>
-            <Image src={Background} fill alt="image" style={{objectFit: "cover"}}/>
-            </motion.div>
-        </div>
-        </div>
-    )
+  return (
+    <div
+      ref={container}
+      className={styles.section}
+      // className='relative flex items-center justify-center h-screen overflow-hidden'
+      style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+    >
+      {/* <div className='relative z-10 p-20 mix-blend-difference text-white w-full h-full flex flex-col justify-between'> */}
+      <div className={styles.relative}>
+        {/* <p className='w-[50vw] text-[2vw] self-end uppercase mix-blend-difference'>Beauty and quality need the right time to be conceived and realised even in a world that is in too much of a hurry.</p> */}
+        <p className={styles.texto}>
+          Descubre tu mejor versión con tratamientos personalizados para tu
+          rostro, cuerpo y cabello.
+        </p>
+      </div>
+      {/* <div className='fixed top-[-10vh] left-0 h-[120vh] w-full'> */}
+      <div className={styles.fixed}>
+        <motion.div style={{ y }} className={styles.imagecontainer}>
+          <Image
+            src={Background}
+            fill
+            alt="image"
+            style={{ objectFit: "cover" }}
+          />
+        </motion.div>
+      </div>
+    </div>
+  );
 }

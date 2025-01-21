@@ -8,6 +8,15 @@ const Loop = ({ reverse }) => {
     { text: "TRATAMIENTOS PERSONALIZADOS" },
     { text: "ESTETICA CERTIFICADA" },
     { text: "PROFESIONALISMO MÉDICO" },
+    { text: "TRATAMIENTOS PERSONALIZADOS" },
+    { text: "ESTETICA CERTIFICADA" },
+    { text: "PROFESIONALISMO MÉDICO" },
+    { text: "TRATAMIENTOS PERSONALIZADOS" },
+    { text: "ESTETICA CERTIFICADA" },
+    { text: "PROFESIONALISMO MÉDICO" },
+    { text: "TRATAMIENTOS PERSONALIZADOS" },
+    { text: "ESTETICA CERTIFICADA" },
+    { text: "PROFESIONALISMO MÉDICO" },
   ];
 
   return (

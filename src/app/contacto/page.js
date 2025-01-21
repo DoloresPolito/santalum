@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 
 import HeaderContainer from "@/structure/HeaderContainer";
 import Header from "../../components/Header"
-
+import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 export const Contacto = ({
 
   }) => {
 
     return(<>
     <div className={styles.section}>
-    <HeaderContainer />
-      <Header />
+    {/* <HeaderContainer />
+      <Header /> */}
+      <AnimatedHomeHeader/>
     <div className={styles.container}></div>
     </div>
     

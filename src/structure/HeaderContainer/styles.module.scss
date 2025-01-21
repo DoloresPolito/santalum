@@ -1,17 +1,22 @@
 .header {
+  display: flex;
+ margin: 0 auto;
   background-color: transparent;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 90%;
   height: 8vh;
   box-sizing: border-box;
   z-index: 100;
-//   z-index: 9000;
   align-self: center;
   background-color: transparent;
- 
   border-bottom: 1px solid #e6e6e6;
   background-color: #f0ebe3;
+  background-color: red;
+  // margin: 0 auto;
+  // display: flex;
+  // justify-self: center;
+
 
   .bar {
     display: flex;

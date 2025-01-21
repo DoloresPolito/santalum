@@ -1,167 +1,200 @@
 .container {
-    height: 92vh;
-    width: 100vw;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 2;
+  margin-top: -20vh;
+
+  @media only screen and (max-width: 800px) {
+    height: auto;
+  }
+}
+
+.carouselcontainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  @media only screen and (max-width: 750px) {
+    height: auto;
+  }
+
+  // .videoBackground {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover; /* Asegura que el video ocupe todo el contenedor */
+  //   z-index: 1;
+  // }
+}
+
+.carouselcontent {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  @media only screen and (max-width: 750px) {
+    height: auto;
+  }
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+// .mySwiper {
+//   display: flex;
+//   flex-direction: row;
+
+//   .swiper-pagination-bullet {
+//     background-color: white !important; // Cambia el color de los puntos a blanco
+//     opacity: 0.6 !important; // Ajusta la opacidad si lo deseas
+//   }
+
+//   .swiper-pagination-bullet-active {
+//     background-color: white !important; // Asegúrate de que el punto activo también sea blanco
+//     opacity: 1 !important;
+//   }
+// }
+
+// .swiper-slide {
+//   font-size: 18px;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .column{
+    height: 80vh;
+    width: 80vh;
+    display: flex;
+    border-radius: 3vh;
+    margin-top: 20vh;
+    background-color: red;
+    .videocontainer {
+      width: 100%; /* Ajustar al contenedor */
+      height: auto;
+      overflow: hidden;
+      border-radius: 10px; /* Opcional, para bordes redondeados */
+    }
+    
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta el video para cubrir el contenedor */
+      border-radius: 3vh;
+  }
+  
+  }
+
+  .textcontainer {
+    width: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 8vh;
-    z-index: 10;
-  
-    @media only screen and (max-width: 750px) {
-      height:auto;
-    }
-  }
-  
-  .carouselcontainer {
-    height: 92vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-  
-    @media only screen and (max-width: 750px) {
-      height:auto;
-    }
-  }
-  
-  .carouselcontent {
-    position: relative;
-    height: 92vh;
-    width: 100%;
-    display: flex;
-  
-    @media only screen and (max-width: 750px) {
-      height:auto;
-    }
-  }
-  
-  .swiper {
-    width: 100vw;
-    height: 92vh;
-  
-  
-    
-    
-  }
-  
-  .mySwiper {
-    display: flex;
-    flex-direction: row;
-  
-    .swiper-pagination-bullet {
-      background-color: white !important; // Cambia el color de los puntos a blanco
-      opacity: 0.6 !important; // Ajusta la opacidad si lo deseas
-    }
-  
-    .swiper-pagination-bullet-active {
-      background-color: white !important; // Asegúrate de que el punto activo también sea blanco
-      opacity: 1 !important;
-    }
-  }
-  
-  .swiper-slide {
-    font-size: 18px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  .slide {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
-  
+    padding: 15vh 6vw 0px 6vw;
+    color: #fdfdf1;
+    z-index: 100;
+    padding-top: 20vh;
+
     @media only screen and (max-width: 750px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height:auto;
-  
+      border: none;
+      width: 100vw;
+      height: 40vh;
+      padding: 0vh 0vw 0px 0vw;
+      margin-top: 3vh;
     }
-  
-    .textcontainer {
-      width: 50vw;
-      height: 92vh;
+
+    .inside {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 15vh 6vw 0px 6vw;
-      color: white;
-      // border-bottom: 1px solid black;
-      // border-right: 1px solid black;
-      z-index: 100;
-  
-      @media only screen and (max-width: 750px) {
-        border: none;
-        width: 100vw;
-        height: 40vh;
-        padding: 0vh 0vw 0px 0vw;
-        margin-top: 3vh;
-      }
-  
-      .inside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-  
-        .title {
-          color: white;
-          font-family: "HattonLight";
-  
-          font-size: 8vh;
-          margin-bottom: 3vh;
-          text-align: center;
-          text-transform: uppercase;
-          padding: 1px 2vw;
-       
-          @media only screen and (max-width: 750px) {
-            font-size: 6vh;
-          }
-        }
-  
-        .text {
-          color: white;
-          font-family: "HattonLight";
-          font-size: 3vh;
-      
-          text-align: center;
-          margin-bottom: 2vh;
-          max-width: 56vh;
-          line-height: 120%;
-          @media only screen and (max-width: 750px) {
-            font-size: 1.8vh;
-            max-width: 70vw;
-          }
-        }
-      }
-    }
-  
-    .imagecontainer {
-      width: 50vw;
-      height: 92vh;
-      // border-bottom: 1px solid black;
-  
-      @media only screen and (max-width: 750px) {
-        width: 80vw;
-        height: 60vh;
-        margin-top: 3vh;
-        margin-bottom: 10vh;
-      }
-  
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-  
+
+      .title {
+        color: #fdfdf1;
+        font-family: "HattonLight";
+
+        font-size: 8vh;
+        margin-bottom: 3vh;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1px 2vw;
+
         @media only screen and (max-width: 750px) {
-          height: 60vh;
-          margin-bottom: 3vh;
-  
+          font-size: 6vh;
+        }
+      }
+
+      .text {
+        color: #fdfdf1;
+        font-family: "HattonLight";
+        font-size: 3vh;
+
+        text-align: center;
+        margin-bottom: 2vh;
+        max-width: 65vh;
+        line-height: 120%;
+        letter-spacing: 0.1vh;
+        @media only screen and (max-width: 750px) {
+          font-size: 1.8vh;
+          max-width: 70vw;
         }
       }
     }
   }
+
+  .imagecontainer {
+    width: 50vw; /* Mantén un ancho proporcional */
+    height: 100%; /* Ajusta el alto al 100% del contenedor */
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      height: auto; /* Ajusta el alto automáticamente */
+      margin: 0; /* Elimina márgenes para centrar correctamente */
+    }
+    img {
+      // width: 60vh;
+      // height: 60vh; /* Ocupa toda la altura disponible */
+      // max-height: 100%; /* Evita que la imagen supere el contenedor */
+      // object-fit: contain; /* Asegura que la imagen no se deforme */
+      // z-index: 2;
+      // margin-top: 0;
+      position: absolute;
+
+      @media only screen and (max-width: 750px) {
+        height: 60vh;
+        margin-bottom: 3vh;
+      }
+    }
+  }
+}
