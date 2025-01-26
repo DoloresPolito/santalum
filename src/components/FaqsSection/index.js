@@ -4,6 +4,8 @@ import AccordionItem from "@/components/AccordionItem";
 import styles from "./styles.module.scss";
 import { useAnimation } from "framer-motion";
 
+import AnimationPrueba from "../AnimationsPrueba";
+
 export default function FaqsSection() {
   const [active, setActive] = useState("");
 
@@ -72,7 +74,7 @@ export default function FaqsSection() {
       <div className={styles.faqssection}>
         <h6 className={`${styles.heading} `}>PREGUNTAS FRECUENTES</h6>
 
-        <div className={styles.faqscontainer}>
+        {/* <div className={styles.faqscontainer}>
           {faqsA.map((question) => (
             <AccordionItem
               key={question.id}
@@ -83,7 +85,9 @@ export default function FaqsSection() {
               content={question.ans}
             />
           ))}
-        </div>
+        </div> */}
+
+        <AnimationPrueba/>
       </div>
     </>
   );

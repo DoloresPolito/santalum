@@ -67,7 +67,7 @@ export default function Treatments() {
                 alt="work"
                 height={600}
                 width={500}
-                priority
+                priority="true"
               />
               {/* </AnimatedDiv> */}
 

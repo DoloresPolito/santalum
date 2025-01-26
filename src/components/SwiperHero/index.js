@@ -6,8 +6,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link";
+// import Image from "next/image";
+// import { motion } from "framer-motion";
 
 export default function SwiperHero() {
   const slides = [
@@ -16,21 +17,21 @@ export default function SwiperHero() {
       text: "Cuidados especializados que revitalizan la piel, suavizan líneas de expresión y realzan los rasgos faciales, brindando un aspecto fresco y natural.",
       src: "carahero.mp4",
       background: "#62685e",
-      link: "/cirugia-plastica",
+      link: "/cara",
     },
     {
       title: "TRATAMIENTOS DE CUERPO",
       text: "Tratamientos corporales diseñados para esculpir, tonificar y mejorar la apariencia física, utilizando técnicas avanzadas que garantizan resultados naturales y efectivos.",
       src: "video1.mp4",
       background: "#9d8b74",
-      link: "/cirugia-reparadora",
+      link: "/cuerpo",
     },
     {
       title: "TRATAMIENTOS CAPILARES",
       text: "Tratamientos capilares personalizados para fortalecer, revitalizar y estimular el crecimiento del cabello, utilizando tecnologías avanzadas y soluciones innovadoras que recuperan su salud, brillo y densidad de forma natural y efectiva.",
       src: "capilarhero.mp4",
       background: "#242424",
-      link: "/no-quirurgicos",
+      link: "/capilar",
     },
   ];
 
@@ -71,8 +72,8 @@ export default function SwiperHero() {
               {/* {isMobile ? (
                 <></>
               ) : ( */}
-                <>
-                  {/* <div
+              <>
+                {/* <div
                     className="swiper-button-next"
                     style={{ color: "#F5F4F4" }}
                   ></div>
@@ -80,7 +81,7 @@ export default function SwiperHero() {
                     className="swiper-button-prev"
                     style={{ color: "#F5F4F4" }}
                   ></div> */}
-                </>
+              </>
               {/* )} */}
             </Swiper>
           </div>
@@ -105,12 +106,14 @@ const Slide = ({ slide }) => {
             <div className={styles.text} data-swiper-parallax="-100">
               <p>{slide.text}</p>
             </div>
+            <Link href={slide.link}>
+            <button>VER TRATAMIENTOS</button>
+            </Link>
+           
           </div>
         </div>
-<div className={styles.column}>
-
-
-        <div className={styles.videocontainer}>
+        <div className={styles.column}>
+          <div className={styles.videocontainer}>
             <video
               src={`/images/nuevas/${slide.src}`}
               autoPlay
@@ -120,7 +123,7 @@ const Slide = ({ slide }) => {
               className={styles.video}
             />
           </div>
-          </div>
+        </div>
         {/* <motion.div
           className={styles.imagecontainer}
           initial={{ scale: 0.95, opacity: 0 }}

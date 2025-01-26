@@ -18,6 +18,7 @@ const HomeSectionSoft = () => {
               muted
               playsInline
               className={styles.video}
+              priority="true"
             />
           </div>
         </div>
@@ -36,14 +37,20 @@ const HomeSectionSoft = () => {
               personalizados pensando exclusivamente en ti.
             </p>
           </AnimatedDiv>
+          <AnimatedDiv delay={0.5}>
           <div className={styles.imagecontainer}>
-            <Image src={image2} alt="Imagen 2" />
+            <Image src={image2} alt="Imagen 2"                   priority="true"/>
           </div>
+          </AnimatedDiv>
         </div>
         <div className={styles.column3}>
+          <AnimatedDiv delay={0.7}>
+
+        
           <div className={styles.imagecontainer}>
-            <Image src={image3} alt="Imagen 3" />
+            <Image src={image3} alt="Imagen 3"                   priority="true"/>
           </div>
+          </AnimatedDiv>
         </div>
       </div>
     </div>
