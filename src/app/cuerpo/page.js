@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
-export const Cuerpo = ({
+import ColorChangeTreatmentsOnScrollGsap from "@/components/ChangeColorTreatments";
+import content from "../../jsons/corporales.json"
 
-  }) => {
-
-    return(<>
-          <AnimatedHomeHeader/>
-    <div className={styles.section}>
-
-    <div className={styles.container}></div>
-    </div>
+export const Cuerpo = ({}) => {
+  return (
+    <>
+      <AnimatedHomeHeader />
+      <div className={styles.section}>
     
-    </>)
-  }
+        <ColorChangeTreatmentsOnScrollGsap category="corporales" content={content[0]}/>
+      </div>
+    </>
+  );
+};
 
-
-  export default Cuerpo;
+export default Cuerpo;

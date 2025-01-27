@@ -19,6 +19,8 @@ const MovingTreatments = ({ reverse }) => {
 
   return (
     <div className={`${styles.loopSection} ${reverse ? styles.reverse : ""}`}>
+      <div className={styles.textcontainer}><h2>TRATAMIENTOS corporales</h2>
+      <p>Tratamientos corporales diseñados para esculpir, tonificar y mejorar la apariencia física, utilizando técnicas avanzadas que garantizan resultados naturales y efectivos.</p></div>
       <div className={styles.marquee}>
         {repeatedItems.map((item, index) => (
           <div className={styles.item} key={`loop-${index}`} style={{ backgroundImage: `url(${item.picture})` }}>

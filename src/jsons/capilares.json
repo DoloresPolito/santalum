@@ -1,0 +1,48 @@
+[
+
+  {
+    "titulo": "Tratamientos capilares",
+    "texto": "xxxxxxxx",
+    "srcfija": "/",
+    "tratamientos": [
+      {
+        "id": "implante-capilar",
+        "titulo": "Implante Capilar",
+        "descripcion": "Recupera la densidad capilar con técnicas de trasplante avanzadas. Utilizamos métodos de última generación para asegurar resultados naturales y permanentes.",
+        "beneficios": [
+          "Resultados naturales y permanentes.",
+          "Recuperación de la densidad capilar."
+        ],
+        "procedimiento": "Técnicas avanzadas de trasplante capilar.",
+        "precio": "Varía según la técnica y las áreas a tratar."
+      },
+      {
+        "id": "bioestimulación-capilar",
+        "titulo": "Bioestimulación Capilar (PRP)",
+        "descripcion": "Utilizamos técnicas avanzadas con plasma rico en plaquetas para estimular el crecimiento del cabello y mejorar la salud del cuero cabelludo.",
+        "beneficios": [
+          "Fortalece el cabello y previene la caída.",
+          "Mejora la salud del cuero cabelludo."
+        ],
+        "procedimiento": "Aplicación de plasma rico en plaquetas en el cuero cabelludo.",
+        "precio": "Varía según el número de sesiones."
+      },
+      {
+        "id": "mesoterapia-capilar",
+        "titulo": "Mesoterapia Capilar",
+        "descripcion": "Tratamiento específico para la alopecia que utiliza microinyecciones de medicamentos directamente en el cuero cabelludo. Es altamente efectivo para detener la caída del cabello y estimular su crecimiento.",
+        "beneficios": [
+          "Detiene la caída del cabello y estimula su crecimiento.",
+          "Tratamiento efectivo para la alopecia."
+        ],
+        "procedimiento": "Microinyecciones de medicamentos en el cuero cabelludo.",
+        "precio": "Varía según la cantidad de sesiones necesarias."
+      }
+
+
+    ]}
+
+
+
+    
+  ]

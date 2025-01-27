@@ -7,6 +7,9 @@ import { useState } from "react";
 import insta from "../../../public/icons/instagram.png";
 import mail from "../../../public/icons/mail.png";
 
+import logo from "../../../public/logo/fondoverde.png"
+
+
 // import blue from "../../../public/icons/blue.png";
 // import white from "../../../public/icons/white.png";
 
@@ -18,7 +21,8 @@ export default function NewFooter() {
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.bottom}>
-            <div>
+            <div className={styles.logocontainer}>
+              <Image src={logo} alt="logo"/>
               <h1>Santalum</h1>
             </div>
             <div className={styles.leftcontainer}>

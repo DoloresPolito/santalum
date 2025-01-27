@@ -1,0 +1,75 @@
+[
+  {
+    "titulo": "Tratamientos corporales",
+    "texto": "xxxxxxxx",
+    "srcfija": "/",
+    "tratamientos": [
+      {
+        "id": "mesoterapia-corporal",
+        "titulo": "Mesoterapia Corporal",
+        "descripcion": "La mesoterapia utiliza inyecciones intradérmicas indoloras para tratar la celulitis y la grasa localizada, con activos que mejoran el aspecto de la piel y reducen la grasa acumulada.",
+        "beneficios": [
+          "Reducción de grasa localizada y mejora del aspecto de la piel.",
+          "Tratamiento efectivo para esculpir y revitalizar áreas específicas del cuerpo."
+        ],
+        "procedimiento": "Inyecciones intradérmicas en las zonas afectadas.",
+        "precio": "Varía según el número de sesiones requeridas."
+      },
+      {
+        "id": "intralipoterapia",
+        "titulo": "Intralipoterapia",
+        "descripcion": "La intralipoterapia es un procedimiento no quirúrgico que elimina la grasa localizada mediante la inyección de una solución específica.",
+        "beneficios": [
+          "Eliminación efectiva de grasa localizada.",
+          "Ideal para tratar áreas difíciles como abdomen, muslos y caderas."
+        ],
+        "procedimiento": "Inyección de solución específica en áreas con grasa localizada.",
+        "precio": "Varía según la cantidad de sesiones necesarias."
+      },
+      {
+        "id": "asesoramiento-nutricional",
+        "titulo": "Asesoramiento Nutricional",
+        "descripcion": "Ofrecemos planes de nutrición personalizados que ayudan a mantener un peso saludable y mejorar el bienestar general.",
+        "beneficios": [
+          "Planes de nutrición adaptados a tus necesidades y estilo de vida.",
+          "Mejora de la salud y el bienestar general."
+        ],
+        "procedimiento": "Valoración personalizada para crear el plan adecuado.",
+        "precio": "Varía según el plan personalizado."
+      },
+      {
+        "id": "presoterapia",
+        "titulo": "Presoterapia",
+        "descripcion": "La presoterapia utiliza presión positiva para mejorar la circulación y estimular el drenaje linfático, ideal para reducir edemas y mejorar el retorno venoso.",
+        "beneficios": [
+          "Reducción de edemas y mejora de la circulación.",
+          "Tratamiento ideal para problemas de retorno venoso y celulitis."
+        ],
+        "procedimiento": "Aplicación de presión positiva en las áreas afectadas.",
+        "precio": "Varía según las necesidades del paciente."
+      },
+      {
+        "id": "carboxiterapia",
+        "titulo": "Carboxiterapia",
+        "descripcion": "La carboxiterapia utiliza dióxido de carbono (CO2) medicinal para mejorar la microcirculación y tratar la celulitis, flacidez y grasa localizada.",
+        "beneficios": [
+          "Mejora la elasticidad y firmeza de la piel.",
+          "Tratamiento efectivo para reducir grasa localizada y combatir la celulitis."
+        ],
+        "procedimiento": "Inyecciones superficiales de dióxido de carbono debajo de la piel.",
+        "precio": "Varía según el número de sesiones."
+      },
+      {
+        "id": "sueroterapia-corporal",
+        "titulo": "Sueroterapia Corporal",
+        "descripcion": "La sueroterapia corporal consiste en la aplicación de sueros adaptados a las necesidades del paciente, ayudando a tratar la celulitis, flacidez y grasa localizada.",
+        "beneficios": [
+          "Estimulación de las defensas y mejora del contorno corporal.",
+          "Desintoxicación y regeneración de la piel."
+        ],
+        "procedimiento": "Aplicación de suero con aguja durante 10 minutos en las áreas a tratar.",
+        "precio": "Varía según el número de sesiones."
+      }
+    ]
+  }
+]

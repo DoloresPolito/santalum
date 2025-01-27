@@ -5,15 +5,21 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Header from "@/components/Header";
 import Link from "next/link";
+import logo from "../../../public/logo/fondoblanco.png"
+import Image from "next/image";
+
 export function AnimatedHomeHeader() {
   return (
     <div className={styles.navsection}>
       <div className={styles.navcontainer}>
+      <Link href='/'>
         <div className={styles.headerBrand}>
-          <Link href='/'>
+     
+            <Image src={logo} alt="logo"/>
           <p>SANTALUM</p>
-          </Link>
+    
         </div>
+        </Link>
 
         <div className={styles.headerOptions}>
           <Header />

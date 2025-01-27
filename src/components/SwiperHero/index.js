@@ -7,8 +7,7 @@ import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
 import Link from "next/link";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
+
 
 export default function SwiperHero() {
   const slides = [
@@ -107,7 +106,7 @@ const Slide = ({ slide }) => {
               <p>{slide.text}</p>
             </div>
             <Link href={slide.link}>
-            <button>VER TRATAMIENTOS</button>
+            <button><p>VER TRATAMIENTOS</p></button>
             </Link>
            
           </div>

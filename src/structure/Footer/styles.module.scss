@@ -193,6 +193,18 @@
       height: 30vh;
       border-bottom: 0.5px solid #f0ebe3;
 
+      .logocontainer{
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        img{
+          height: 10vh;
+          width: 10vh;
+          margin-top: 5vh;
+          margin-right: 3vh;
+        }
+      }
+
       h1 {
         font-family: "HattonLight";
         font-size: 13vh;

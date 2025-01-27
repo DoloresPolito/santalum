@@ -1,9 +1,42 @@
 .loopSection {
   overflow: hidden;
   width: 100%;
-  height: 100vh;
-  background-color: #39442b;
+  height: auto;
+  // background-color: #39442b;
   padding-top: 15vh;
+
+  .textcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+
+    h2{
+      color: #fdfdf1;
+      font-family: "HattonLight";
+      font-size: 7vh;
+      margin-bottom: 3vh;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 1px 2vw;
+      line-height: 100%;
+      letter-spacing: 0.2vh;
+    }
+
+    p{
+      color: #fdfdf1;
+      font-family: "HattonLight";
+      font-size: 3vh;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: 0.1vh;
+      max-width: 70vh;
+      margin-top:-10vh;
+    }
+  }
   .marquee {
     display: flex;
     align-items: center;
@@ -22,8 +55,8 @@
 
   .item {
     flex: 0 0 auto; /* Permite un ancho fijo para cada elemento */
-    width: 60vh; /* Ancho del item */
-    height: 70vh; /* Altura del item */
+    width: 40vh; /* Ancho del item */
+    height: 50vh; /* Altura del item */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -35,16 +68,12 @@
     position: relative;
     // overflow: hidden;
     margin-left: 5vh;
-cursor: pointer;
+    cursor: pointer;
     transition: opacity 0.5s ease; /* Suaviza el cambio de opacidad */
 
     &:hover {
       opacity: 0.8; /* Reduce la opacidad al pasar el cursor */
-    
     }
-
-
-
 
     .actionButton {
       align-self: center;

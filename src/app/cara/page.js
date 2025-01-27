@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { AnimatedHomeHeader } from "@/structure/NavbarToia";
+
+import ColorChangeOnScrollGsap from "@/components/ChangeColor";
 export const Cara = ({}) => {
   return (
     <>
-      <AnimatedHomeHeader />
+
       <div className={styles.section}>
-        <div className={styles.container}></div>
+        {/* <div className={styles.container}> */}
+{/* <ColorChangeOnScrollGsap/> */}
+
+        {/* </div> */}
       </div>
     </>
   );
