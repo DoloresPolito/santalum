@@ -91,7 +91,7 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
         data-textcolor="#c2c1b3"
       >
         <div className="w-full flex items-center justify-around">
-          <div>
+          {/* <div>
             <img
               src="https://images.pexels.com/photos/4467879/pexels-photo-4467879.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
@@ -102,7 +102,7 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
             Look deep into{' '}
             <span className={`text-green`}>Yourself</span> ,
             and then you will understand everything better.
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -112,7 +112,7 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
         data-textcolor="#b3c2ba"
       >
         <div className="w-full flex items-center justify-around">
-          <div className={`w-96 text-5xl`}>
+          {/* <div className={`w-96 text-5xl`}>
             The best thing one can do when it's raining is{' '}
             <span className={`text-green`}>
               to let it rain.
@@ -124,7 +124,7 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
               alt=""
               className="rounded-3xl"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -88,17 +88,17 @@ function ColorChangeTreatmentsOnScrollGsap({data}) {
       >
         <div className="w-full flex items-center justify-around">
           <div>
-            <img
+            {/* <img
               src="https://images.pexels.com/photos/4467879/pexels-photo-4467879.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
               className="rounded-3xl"
-            />
+            /> */}
           </div>
-          <div className="w-96 text-5xl">
+          {/* <div className="w-96 text-5xl">
             Look deep into{' '}
             <span className={`text-green`}>Yourself</span> ,
             and then you will understand everything better.
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -108,18 +108,18 @@ function ColorChangeTreatmentsOnScrollGsap({data}) {
         data-textcolor="#b3c2ba"
       >
         <div className="w-full flex items-center justify-around">
-          <div className={`w-96 text-5xl`}>
+          {/* <div className={`w-96 text-5xl`}>
             The best thing one can do when it's raining is{' '}
             <span className={`text-green`}>
               to let it rain.
             </span>{' '}
-          </div>
+          </div> */}
           <div>
-            <img
+            {/* <img
               src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
               className="rounded-3xl"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ function ColorChangeTreatmentsOnScrollGsap({data}) {
         data-textcolor="#ffffff"
       >
         <div className="w-full  text-[9vw] leading-[1.1] tracking-tighter ">
-          <span className={``}>End Of Scroll</span>
+          {/* <span className={``}>End Of Scroll</span> */}
       
         </div>
       </section>
