@@ -25,11 +25,11 @@ export default function NewFooter() {
               <Image src={logo} alt="logo"/>
               <h1>Santalum</h1>
             </div>
-            <div className={styles.leftcontainer}>
+            {/* <div className={styles.leftcontainer}>
               <p>Nosotros</p>
               <p>Cuerpo</p>
               <p>Capilar</p>
-            </div>
+            </div> */}
           </div>
           <div className={styles.top}>
             <div className={styles.cont1}>

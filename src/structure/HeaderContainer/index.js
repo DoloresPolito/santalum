@@ -10,7 +10,7 @@ export default function HeaderContainer() {
     <div className={styles.header}>
       <div className={styles.bar}>
         <h2>Santalum</h2>
-        <BookButton />
+        <BookButton text="contactanos"/>
    
       </div>
       {/* <motion.div initial="initial" className={styles.background}></motion.div> */}

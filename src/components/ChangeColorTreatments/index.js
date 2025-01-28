@@ -1,27 +1,26 @@
-"use client"
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Scrollbar from 'smooth-scrollbar';
-import Footer from "@/structure/Footer"
+"use client";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Scrollbar from "smooth-scrollbar";
+import Footer from "@/structure/Footer";
 import MovingTreatments from "@/components/MovingTreatments";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function ColorChangeTreatmentsOnScrollGsap({content}) {
+function ColorChangeTreatmentsOnScrollGsap({ content, category }) {
   useEffect(() => {
-
-    console.log("content", content)
-    const scrollBar = Scrollbar.init(document.querySelector('.main'), {
+    const scrollBar = Scrollbar.init(document.querySelector(".main"), {
       damping: 0.06,
       delegateTo: document,
       alwaysShowTracks: false,
       speed: 3,
     });
     ScrollTrigger.defaults({
-      scroller: '.main',
+      scroller: ".main",
     });
-    ScrollTrigger.scrollerProxy('.main', {
+    ScrollTrigger.scrollerProxy(".main", {
       scrollTop(value) {
         if (arguments.length) {
           scrollBar.scrollTop = value;
@@ -32,27 +31,27 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
 
     scrollBar.addListener(ScrollTrigger.update);
 
-    const sectionColor = document.querySelectorAll('[data-bgcolor]');
+    const sectionColor = document.querySelectorAll("[data-bgcolor]");
     sectionColor.forEach((colorSection, i) => {
-      const prevBgColor = i === 0 ? '' : sectionColor[i - 1].dataset.bgcolor;
+      const prevBgColor = i === 0 ? "" : sectionColor[i - 1].dataset.bgcolor;
       const prevTextColor =
-        i === 0 ? '' : sectionColor[i - 1].dataset.textcolor;
+        i === 0 ? "" : sectionColor[i - 1].dataset.textcolor;
 
       ScrollTrigger.create({
         trigger: colorSection,
-        scroller: '.main',
-        start: 'top 50%',
+        scroller: ".main",
+        start: "top 50%",
         onEnter: () =>
-          gsap.to('.main', {
+          gsap.to(".main", {
             backgroundColor: colorSection.dataset.bgcolor,
             color: colorSection.dataset.textcolor,
-            overwrite: 'auto',
+            overwrite: "auto",
           }),
         onLeaveBack: () =>
-          gsap.to('.main', {
+          gsap.to(".main", {
             backgroundColor: prevBgColor,
             color: prevTextColor,
-            overwrite: 'auto',
+            overwrite: "auto",
           }),
       });
     });
@@ -61,16 +60,14 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
   }, []);
 
   return (
-  
-      <div className="main h-screen w-screen flex flex-col overflow-auto">
-
+    <div className="main h-screen w-screen flex flex-col overflow-auto">
       <section
         className="min-h-screen w-screen relative flex items-center justify-center px-32"
         data-bgcolor="#39442b"
         data-textcolor="#ffffff"
       >
         <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
-        <MovingTreatments/>
+          <MovingTreatments />
         </div>
       </section>
 
@@ -79,10 +76,7 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
-        <div className="w-full flex items-center justify-around">
-
-       
-        </div>
+        <div className="w-full flex items-center justify-around"></div>
       </section>
 
       <section
@@ -103,6 +97,28 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
             <span className={`text-green`}>Yourself</span> ,
             and then you will understand everything better.
           </div> */}
+          <h2>{category}</h2>
+
+          {content.tratamientos.map((tratamiento, index) => (
+            <Link key={index} href={`/${category}/${tratamiento.id}`}>
+              <div
+              // className={styles.item}
+              // onMouseEnter={() => handleMouseEnter(tratamiento.src)} // Cambiar el fondo cuando el mouse entra
+              // onMouseLeave={handleMouseLeave} // Volver al fondo inicial cuando el mouse sale
+              >
+                <p>{tratamiento.titulo}</p>
+                {/* <button className={styles.verMasButton}>VER +</button> */}
+
+                {/* Asegurar que las imágenes se carguen con prioridad */}
+                {/* <img 
+                    src={tratamiento.src} 
+                    alt={tratamiento.nombre}
+                    loading="eager" // Carga la imagen con prioridad
+                    style={{ display: "none" }} // Ocultar la imagen, ya que solo se usa para cargar el fondo
+                  /> */}
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -135,10 +151,9 @@ function ColorChangeTreatmentsOnScrollGsap({content}) {
       >
         <div className="w-full  text-[9vw] leading-[1.1] tracking-tighter ">
           <span className={``}>End Of Scroll</span>
-      
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

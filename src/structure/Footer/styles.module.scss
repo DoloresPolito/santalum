@@ -202,6 +202,10 @@
           width: 10vh;
           margin-top: 5vh;
           margin-right: 3vh;
+          @media only screen and (max-width: 600px) {
+            height: 8vh;
+            width: 8vh;
+          }
         }
       }
 
@@ -209,6 +213,11 @@
         font-family: "HattonLight";
         font-size: 13vh;
         color: #f0ebe3;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 8vh;
+          margin-top: 3vh;
+        }
       }
 
       .leftcontainer {
@@ -236,6 +245,13 @@
       justify-content: space-between;
       align-items: center;
 
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        height: 14vh;
+        // align-items: center;
+        justify-content: center;
+      }
+
       p {
         font-family: "HattonLight";
         font-size: 2.5vh;
@@ -245,10 +261,18 @@
 
       .left {
         width: 50%;
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          text-align: center;
+        }
       }
       .right {
         width: 50%;
        text-align: end;
+       @media only screen and (max-width: 600px) {
+        width: 100%;
+        text-align: center;
+      }
       }
     }
   }

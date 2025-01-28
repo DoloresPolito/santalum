@@ -62,10 +62,11 @@ function ColorChangeOnScrollGsap() {
   }, []);
 
   return (
-    <div className="main h-screen w-full flex flex-col  overflow-auto ">
+
+      <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden">
       <AnimatedHomeHeader />
       <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
+        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32 overflow-x-hidden"
         data-bgcolor="#39442b"
         data-textcolor="#ffffff"
       >
@@ -76,30 +77,18 @@ function ColorChangeOnScrollGsap() {
       </section>
 
       <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
+        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
         <div className="w-full flex items-center justify-around">
           <HomeSectionSoft />
-          {/* <div className="w-96 text-5xl">
-            In nature, nothing is{' '}
-            <span className={`text-green`}>perfect</span>{' '}
-            and everything is perfect. Trees can be contorted, bent in weird
-            ways, and they're still beautiful.
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/5604966/pexels-photo-5604966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              className="rounded-3xl"
-            />
-          </div> */}
+         
         </div>
       </section>
 
-      <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
+      {/* <section
+        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#3b3825"
         data-textcolor="#c2c1b3"
       >
@@ -107,7 +96,7 @@ function ColorChangeOnScrollGsap() {
           <Loop/>
   
         </div>
-      </section>
+      </section> */}
 
       <section
         className="min-h-screen w-screen relative "

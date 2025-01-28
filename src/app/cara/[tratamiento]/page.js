@@ -1,12 +1,12 @@
 // import Treatment from "../../../components/Treatment";
-import cuerpo from "../../../jsons/corporales.json";
+import cara from "../../../jsons/faciales.json";
 
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 
 export default function TreatmentPage({ params }) {
   const { tratamiento } = params;
 
-  const data = cuerpo[0].tratamientos.find(
+  const data = cara[0].tratamientos.find(
     (item) => item.id === tratamiento
   );
 

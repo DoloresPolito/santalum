@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.scss";
 
-const BookButton = () => {
+const BookButton = ({text}) => {
 
 
   return (
@@ -14,7 +14,7 @@ const BookButton = () => {
       initial="rest"
       animate="rest"
     >
-      <p>contactanos</p>
+      <p>{text}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
