@@ -22,9 +22,9 @@ export default function TreatmentItem({ data }) {
 
             <AnimatedDiv delay={0.5}>
             <div className={styles.benefits}>
-              {data.beneficios.map((benefit) => {
+              {data.beneficios.map((benefit, index) => {
                 return (
-                  <div className={styles.benefit}>
+                  <div className={styles.benefit} key={index}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
