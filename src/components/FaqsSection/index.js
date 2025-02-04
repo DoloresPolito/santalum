@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 // import AnimationPrueba from "../AnimationsPrueba";
 
-export default function FaqsSection() {
+export default function FaqsSection({background}) {
   const [active, setActive] = useState("");
 
   const handleToggle = (id) => {
@@ -69,9 +69,11 @@ export default function FaqsSection() {
     },
   ];
 
+
+
   return (
     <>
-      <div className={styles.faqssection}>
+      <div className={styles.faqssection} style={{ backgroundColor: background }}>
         <h6 className={`${styles.heading} `}>PREGUNTAS FRECUENTES</h6>
 
         <div className={styles.faqscontainer}>

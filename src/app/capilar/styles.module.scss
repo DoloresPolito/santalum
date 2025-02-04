@@ -1,18 +1,9 @@
-.section{
+.section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: center;
-
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 90%;
-
-    }
-
-}
+    margin-top: -15vh;
+  }

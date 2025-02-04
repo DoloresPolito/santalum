@@ -1,14 +1,15 @@
-// import Treatment from "../../../components/Treatment";
 import cara from "../../../jsons/faciales.json";
-
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
+import TreatmentItem from "@/components/TreatmentItem";
+import styles from "./styles.module.scss";
+
 
 export default function TreatmentPage({ params }) {
   const { tratamiento } = params;
 
-  const data = cara[0].tratamientos.find(
-    (item) => item.id === tratamiento
-  );
+  
+
+  const data = cara[0].tratamientos.find((item) => item.id === tratamiento);
 
   // Si no se encuentra, puedes mostrar un mensaje de error o redirigir
   if (!data) {
@@ -17,14 +18,13 @@ export default function TreatmentPage({ params }) {
 
   return (
     <>
-       <AnimatedHomeHeader />
+      <div className={styles.section}>
+        <AnimatedHomeHeader />
 
-       <h2>{data.titulo}</h2>
-       <h2>{data.descripcion}</h2>
-       <h2>{data.beneficios[0]}</h2>
-       <h2>{data.beneficios[1]}</h2>
-       <h2>{data.beneficios[2]}</h2>
+        <TreatmentItem data={data} />
 
+
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import cuerpo from "../../../jsons/corporales.json";
+import capilar from "../../../jsons/capilares.json";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 import TreatmentItem from "@/components/TreatmentItem";
 import styles from "./styles.module.scss";
@@ -7,7 +7,9 @@ import styles from "./styles.module.scss";
 export default function TreatmentPage({ params }) {
   const { tratamiento } = params;
 
-  const data = cuerpo[0].tratamientos.find((item) => item.id === tratamiento);
+  
+
+  const data = capilar[0].tratamientos.find((item) => item.id === tratamiento);
 
   // Si no se encuentra, puedes mostrar un mensaje de error o redirigir
   if (!data) {
