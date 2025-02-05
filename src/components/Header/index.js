@@ -6,6 +6,8 @@ import styles from "./styles.module.scss";
 import Nav from "./Nav";
 import BookButton from "../BookButton";
 
+import Link from "next/link";
+
 const menu = {
   open: {
     width: "480px",
@@ -30,13 +32,18 @@ const menu = {
   },
 };
 
+
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <div className={styles.header}>
       <div className={styles.buttoncontainer}>
-      <BookButton text="contactanos" />
+        <Link href="https://wa.me/34611833062"    target="_blank"
+              rel="noopener noreferrer">
+
+        <BookButton text="contactanos" />
+        </Link>
       </div>
       <motion.div
         className={styles.menu}
@@ -52,6 +59,10 @@ export default function Index() {
           setIsActive(!isActive);
         }}
       />
+
+   
+
+
     </div>
   );
 }

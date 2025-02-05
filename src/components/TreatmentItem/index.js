@@ -5,6 +5,7 @@ import Image from "next/image";
 import MovingTreatments from "@/components/MovingTreatments";
 import AnimatedDiv from "../AnimatedDiv";
 import FaqsSection from "../FaqsSection";
+import BookButton from "../BookButton";
 
 export default function TreatmentItem({ data }) {
   return (
@@ -14,9 +15,15 @@ export default function TreatmentItem({ data }) {
           <div className={styles.left}>
             <AnimatedDiv>
             <h2>{data.titulo}</h2>
+         
             </AnimatedDiv>
           
             <AnimatedDiv>
+            <h3>{data.subtitulo}</h3>
+         
+            </AnimatedDiv>
+            <AnimatedDiv>
+
             <p>{data.descripcion}</p>
             </AnimatedDiv>
 
@@ -77,7 +84,10 @@ export default function TreatmentItem({ data }) {
               )}
             </div>
             </AnimatedDiv>
+ 
+            <BookButton text="consultar"/>
           </div>
+   
    
           <div className={styles.right}>
             <Image

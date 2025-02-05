@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { AnimatedHomeHeader } from "@/structure/NavbarToia";
+// import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 // import ColorChangeTreatmentsOnScrollGsap from "@/components/ChangeColorTreatments";
 import content from "../../jsons/corporales.json";
 import HoverTreatments from "../../components/HoverTreatments";
@@ -16,7 +16,7 @@ export const Cuerpo = ({}) => {
           content={content[0]}
         /> */}
 
-        <HoverTreatments content={content[0]}/>
+        <HoverTreatments content={content[0]} category="cuerpo"/>
       </div>
       <NewFooter/>
     </>

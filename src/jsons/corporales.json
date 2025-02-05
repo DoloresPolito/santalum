@@ -7,6 +7,7 @@
       {
         "id": "mesoterapia-corporal",
         "titulo": "Mesoterapia Corporal",
+        "subtitulo": "Tratamiento para reducir grasa localizada y mejorar la textura de la piel.",
         "descripcion": "La mesoterapia utiliza inyecciones intradérmicas indoloras para tratar la celulitis y la grasa localizada, con activos que mejoran el aspecto de la piel y reducen la grasa acumulada.",
         "beneficios": [
           "Reducción de grasa localizada y mejora del aspecto de la piel.",
@@ -19,6 +20,7 @@
       {
         "id": "intralipoterapia",
         "titulo": "Intralipoterapia",
+        "subtitulo": "Eliminación no quirúrgica de grasa localizada.",
         "descripcion": "La intralipoterapia es un procedimiento no quirúrgico que elimina la grasa localizada mediante la inyección de una solución específica.",
         "beneficios": [
           "Eliminación efectiva de grasa localizada.",
@@ -31,6 +33,7 @@
       {
         "id": "asesoramiento-nutricional",
         "titulo": "Asesoramiento Nutricional",
+        "subtitulo": "Planes personalizados para mejorar tu salud y bienestar.",
         "descripcion": "Ofrecemos planes de nutrición personalizados que ayudan a mantener un peso saludable y mejorar el bienestar general.",
         "beneficios": [
           "Planes de nutrición adaptados a tus necesidades y estilo de vida.",
@@ -43,6 +46,7 @@
       {
         "id": "presoterapia",
         "titulo": "Presoterapia",
+        "subtitulo": "Mejora la circulación y reduce la retención de líquidos.",
         "descripcion": "La presoterapia utiliza presión positiva para mejorar la circulación y estimular el drenaje linfático, ideal para reducir edemas y mejorar el retorno venoso.",
         "beneficios": [
           "Reducción de edemas y mejora de la circulación.",
@@ -55,6 +59,7 @@
       {
         "id": "carboxiterapia",
         "titulo": "Carboxiterapia",
+        "subtitulo": "Tratamiento para mejorar la circulación y reducir la celulitis.",
         "descripcion": "La carboxiterapia utiliza dióxido de carbono (CO2) medicinal para mejorar la microcirculación y tratar la celulitis, flacidez y grasa localizada.",
         "beneficios": [
           "Mejora la elasticidad y firmeza de la piel.",
@@ -67,6 +72,7 @@
       {
         "id": "sueroterapia-corporal",
         "titulo": "Sueroterapia Corporal",
+        "subtitulo": "Regenera la piel y mejora el contorno corporal.",
         "descripcion": "La sueroterapia corporal consiste en la aplicación de sueros adaptados a las necesidades del paciente, ayudando a tratar la celulitis, flacidez y grasa localizada.",
         "beneficios": [
           "Estimulación de las defensas y mejora del contorno corporal.",

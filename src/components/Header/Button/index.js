@@ -8,7 +8,7 @@ export default function Button({isActive, toggleMenu}) {
         className={styles.line}
         animate={{
           rotate: isActive ? 45 : 0, 
-          translateY: isActive ? 10 : 0
+          translateY: isActive ? "1vh" : 0
         }}
         transition={{ duration: 0.3 }}
       ></motion.div>
@@ -25,7 +25,7 @@ export default function Button({isActive, toggleMenu}) {
         className={styles.line}
         animate={{
           rotate: isActive ? -45 : 0, 
-          translateY: isActive ? -10 : 0
+          translateY: isActive ? "-1.8vh" : 0
         }}
         transition={{ duration: 0.3 }}
       ></motion.div>

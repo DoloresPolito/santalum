@@ -6,7 +6,7 @@ import Project from "@/components/Project";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 import AnimatedDiv from "../AnimatedDiv";
 
-export default function Home({ content }) {
+export default function Home({ content, category }) {
   // const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
@@ -28,6 +28,7 @@ export default function Home({ content }) {
             <Project
               index={index}
               project={project}
+              category={category}
               // setModal={setModal}
               key={index}
             />

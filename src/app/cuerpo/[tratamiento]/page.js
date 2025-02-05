@@ -7,6 +7,8 @@ import styles from "./styles.module.scss";
 export default function TreatmentPage({ params }) {
   const { tratamiento } = params;
 
+  console.log("PARAMS EN cuerpo", params)
+
   const data = cuerpo[0].tratamientos.find((item) => item.id === tratamiento);
 
   // Si no se encuentra, puedes mostrar un mensaje de error o redirigir

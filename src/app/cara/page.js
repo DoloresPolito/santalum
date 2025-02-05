@@ -7,7 +7,7 @@ export const Cara = ({}) => {
   return (
     <>
       <div className={styles.section}>
-        <HoverTreatments content={content[0]} />
+        <HoverTreatments content={content[0]} category="cara"/>
       </div>
       <NewFooter />
     </>

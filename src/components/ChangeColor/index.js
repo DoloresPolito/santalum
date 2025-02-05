@@ -4,11 +4,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Scrollbar from "smooth-scrollbar";
 import Intro from "../../structure/Intro";
-import HomeSectionSoft from "../HomeSectionSoft";
+// import HomeSectionSoft from "../HomeSectionSoft";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
-import Loop from "@/components/Loop";
+// import Loop from "@/components/Loop";
 import FaqsSection from "@/components/FaqsSection";
-import Footer from "@/structure/Footer"
+import Footer from "@/structure/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 function ColorChangeOnScrollGsap() {
@@ -62,41 +62,37 @@ function ColorChangeOnScrollGsap() {
   }, []);
 
   return (
-
-      <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden">
-            <AnimatedHomeHeader />
+    <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden">
+      <AnimatedHomeHeader />
       <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32 overflow-x-hidden"
         data-bgcolor="#39442b"
         data-textcolor="#ffffff"
       >
         <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
-
           <Intro />
         </div>
       </section>
 
-      {/* <section
+      <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
         <div className="w-full flex items-center justify-around">
-          <HomeSectionSoft />
-         
+          {/* <HomeSectionSoft /> */}
         </div>
-      </section> */}
+      </section>
 
-      {/* <section
+      <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#3b3825"
         data-textcolor="#c2c1b3"
       >
         <div className="w-creen flex items-center justify-around">
-          <Loop/>
-  
+          {/* <Loop/> */}
         </div>
-      </section> */}
+      </section>
 
       <section
         className="min-h-screen w-screen relative "
@@ -104,21 +100,20 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="#d0b6c0"
       >
         <div className="w-full flex items-center justify-around">
-          <FaqsSection/>
-    
+          <FaqsSection />
         </div>
       </section>
 
-      {/* <section
+      <section
         className="min-h-screen w-screen relative flex items-center justify-center px-32"
-        data-bgcolor="#582e1a"
-        data-textcolor="#ffffff"
+        data-bgcolor="#f8fb9c"
+        data-textcolor="#39442b"
       >
         <div className="w-full  text-[9vw] leading-[1.1] tracking-tighter ">
           <span className={``}>End Of Scroll</span>
         </div>
-      </section> */}
-      <Footer/>
+      </section>
+      <Footer />
     </div>
   );
 }

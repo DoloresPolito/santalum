@@ -11,10 +11,10 @@ export const links = [
         title: "Capilar",
         href: "/capilar"
     },
-    {
-        title: "Sobre nosotros",
-        href: "/nosotros"
-    },
+    // {
+    //     title: "Sobre nosotros",
+    //     href: "/nosotros"
+    // },
     {
         title: "Contacto",
         href: "/contacto"
@@ -22,20 +22,20 @@ export const links = [
 ]
 
 export const footerLinks = [
-    {
-        title: "Facebook",
-        href: "/"
-    },
-    {
-        title: "Instagram",
-        href: "/"
-    },
+    // {
+    //     title: "Facebook",
+    //     href: "/"
+    // },
+    // {
+    //     title: "Instagram",
+    //     href: "/"
+    // },
     {
         title: "Email",
-        href: "/"
+        href: "mailto:correo@ejemplo.com"
     },
     {
-        title: "Teléfono",
-        href: "/"
+        title: "Chatear por Whatsapp",
+        href: "https://wa.me/34611833062"
     }
 ]

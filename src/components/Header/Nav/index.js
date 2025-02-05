@@ -31,12 +31,15 @@ export default function index() {
           const { title, href } = link;
           return (
             <motion.a
+              key={`f_${i}`}
               variants={slideIn}
               custom={i}
               initial="initial"
               animate="enter"
               exit="exit"
-              key={`f_${i}`}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {title}
             </motion.a>
