@@ -13,7 +13,8 @@
           "Tratamiento efectivo para esculpir y revitalizar áreas específicas del cuerpo."
         ],
         "procedimiento": "Inyecciones intradérmicas en las zonas afectadas.",
-        "precio": "Varía según el número de sesiones requeridas."
+        "precio": "Varía según el número de sesiones requeridas.",
+        "img":"1.jpg"
       },
       {
         "id": "intralipoterapia",
@@ -24,7 +25,8 @@
           "Ideal para tratar áreas difíciles como abdomen, muslos y caderas."
         ],
         "procedimiento": "Inyección de solución específica en áreas con grasa localizada.",
-        "precio": "Varía según la cantidad de sesiones necesarias."
+        "precio": "Varía según la cantidad de sesiones necesarias.",
+        "img":"2.jpg"
       },
       {
         "id": "asesoramiento-nutricional",
@@ -35,7 +37,8 @@
           "Mejora de la salud y el bienestar general."
         ],
         "procedimiento": "Valoración personalizada para crear el plan adecuado.",
-        "precio": "Varía según el plan personalizado."
+        "precio": "Varía según el plan personalizado.",
+        "img":"5.jpg"
       },
       {
         "id": "presoterapia",
@@ -46,7 +49,8 @@
           "Tratamiento ideal para problemas de retorno venoso y celulitis."
         ],
         "procedimiento": "Aplicación de presión positiva en las áreas afectadas.",
-        "precio": "Varía según las necesidades del paciente."
+        "precio": "Varía según las necesidades del paciente.",
+        "img":"7.jpg"
       },
       {
         "id": "carboxiterapia",
@@ -57,7 +61,8 @@
           "Tratamiento efectivo para reducir grasa localizada y combatir la celulitis."
         ],
         "procedimiento": "Inyecciones superficiales de dióxido de carbono debajo de la piel.",
-        "precio": "Varía según el número de sesiones."
+        "precio": "Varía según el número de sesiones.",
+        "img":"8.jpg"
       },
       {
         "id": "sueroterapia-corporal",
@@ -68,7 +73,8 @@
           "Desintoxicación y regeneración de la piel."
         ],
         "procedimiento": "Aplicación de suero con aguja durante 10 minutos en las áreas a tratar.",
-        "precio": "Varía según el número de sesiones."
+        "precio": "Varía según el número de sesiones.",
+        "img":"12.jpg"
       }
     ]
   }

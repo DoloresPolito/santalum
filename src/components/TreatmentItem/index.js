@@ -22,9 +22,10 @@ export default function TreatmentItem({ data }) {
 
             <AnimatedDiv delay={0.5}>
             <div className={styles.benefits}>
-              {data.beneficios.map((benefit, index) => (
+              {data.beneficios.map((benefit, index) => {                
+               return (
        
-                  <div className={styles.benefit} key={`${benefit}-${index}`}>
+                  <div key={index} className={styles.benefit} >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -69,7 +70,11 @@ export default function TreatmentItem({ data }) {
                     <h4>{benefit}</h4>
                   </div>
               
-              ))}
+              )}
+
+              
+              
+              )}
             </div>
             </AnimatedDiv>
           </div>

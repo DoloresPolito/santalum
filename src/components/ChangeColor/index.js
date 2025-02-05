@@ -64,7 +64,7 @@ function ColorChangeOnScrollGsap() {
   return (
 
       <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden">
-      <AnimatedHomeHeader />
+            <AnimatedHomeHeader />
       <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32 overflow-x-hidden"
         data-bgcolor="#39442b"

@@ -6,6 +6,7 @@ import Scrollbar from "smooth-scrollbar";
 import Footer from "@/structure/Footer";
 import MovingTreatments from "@/components/MovingTreatments";
 import Link from "next/link";
+import HoverTreatments from "@/components/HoverTreatments";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,86 +62,31 @@ function ColorChangeTreatmentsOnScrollGsap({ content, category }) {
 
   return (
     <div className="main h-screen w-screen flex flex-col overflow-auto">
-      <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
-        data-bgcolor="#39442b"
-        data-textcolor="#ffffff"
-      >
-        <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
-          <MovingTreatments />
-        </div>
-      </section>
 
-      <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
-        data-bgcolor="#fdfdf1"
-        data-textcolor="#d0b6c0"
-      >
-        <div className="w-full flex items-center justify-around"></div>
-      </section>
 
       <section
         className="min-h-screen w-screen relative flex items-center justify-center px-32"
         data-bgcolor="#3b3825"
         data-textcolor="#c2c1b3"
       >
-        <div className="w-full flex items-center justify-around">
-          {/* <div>
-            <img
-              src="https://images.pexels.com/photos/4467879/pexels-photo-4467879.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              className="rounded-3xl"
-            />
-          </div>
-          <div className="w-96 text-5xl">
-            Look deep into{' '}
-            <span className={`text-green`}>Yourself</span> ,
-            and then you will understand everything better.
-          </div> */}
-          <h2>{category}</h2>
+        <div className="w-full flex flex-col items-center justify-around">
+   
+          <h2>{content.titulo}</h2>
+          <h2>{content.texto}</h2>
 
-          {content.tratamientos.map((tratamiento, index) => (
-            <Link key={index} href={`/${category}/${tratamiento.id}`}>
-              <div
-              // className={styles.item}
-              // onMouseEnter={() => handleMouseEnter(tratamiento.src)} // Cambiar el fondo cuando el mouse entra
-              // onMouseLeave={handleMouseLeave} // Volver al fondo inicial cuando el mouse sale
-              >
-                <p>{tratamiento.titulo}</p>
-                {/* <button className={styles.verMasButton}>VER +</button> */}
-
-                {/* Asegurar que las imágenes se carguen con prioridad */}
-                {/* <img 
-                    src={tratamiento.src} 
-                    alt={tratamiento.nombre}
-                    loading="eager" // Carga la imagen con prioridad
-                    style={{ display: "none" }} // Ocultar la imagen, ya que solo se usa para cargar el fondo
-                  /> */}
-              </div>
-            </Link>
-          ))}
+      
         </div>
       </section>
 
       <section
-        className="min-h-screen w-screen relative "
+        className="
+        min-h-screen w-screen 
+        relative "
         data-bgcolor="#032F35"
         data-textcolor="#b3c2ba"
       >
         <div className="w-full flex items-center justify-around">
-          {/* <div className={`w-96 text-5xl`}>
-            The best thing one can do when it's raining is{' '}
-            <span className={`text-green`}>
-              to let it rain.
-            </span>{' '}
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              className="rounded-3xl"
-            />
-          </div> */}
+          <HoverTreatments content={content} />
         </div>
       </section>
 
