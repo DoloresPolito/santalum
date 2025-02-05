@@ -16,7 +16,7 @@ const scaleAnimation = {
        transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
 }
 
-export default function index({modal, content}) {
+export default function Modal({modal, content}) {
 
   const { active, index } = modal;
   const modalContainer = useRef(null);

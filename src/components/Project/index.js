@@ -14,7 +14,7 @@ const anim = {
   closed: { width: 0 },
 };
 
-export default function index({ index, project, setModal }) {
+export default function Project({ index, project, setModal }) {
   const [isActive, setIsActive] = useState(false);
 
   return (

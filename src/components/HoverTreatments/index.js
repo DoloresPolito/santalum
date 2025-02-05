@@ -1,8 +1,8 @@
 "use client";
 import styles from "./style.module.css";
-import { useState } from "react";
+// import { useState } from "react";
 import Project from "@/components/Project";
-import Modal from "@/components/Modal";
+// import Modal from "@/components/Modal";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 
 export default function Home({ content }) {
