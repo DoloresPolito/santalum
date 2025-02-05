@@ -1,13 +1,16 @@
 .project {
     position: relative; /* Para que el Link absoluto se posicione dentro de él */
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 5vh 15vh 5vh 12vh;
     border-top: 1px solid rgb(201, 201, 201);
     cursor: pointer;
     transition: all 0.2s;
+ 
+ 
 }
 
 .project:last-of-type {
@@ -15,12 +18,15 @@
 }
 
 .project:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    background-color: #a2b8a2;
+
+
 }
 
-.project:hover h2 {
+/* .project:hover h2 {
     transform: translateX(-10px);
-}
+} */
 
 .project:hover p {
     transform: translateX(10px);
@@ -59,3 +65,10 @@
 .project img{
     width: 20vw;
 }
+
+.project h2 {
+    color: #62685e;
+    font-family: "HattonLight";
+    font-size: 4vh;
+    transition: all 0.4s;
+  }

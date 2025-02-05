@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import Project from "@/components/Project";
 // import Modal from "@/components/Modal";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
+import AnimatedDiv from "../AnimatedDiv";
 
 export default function Home({ content }) {
   // const [modal, setModal] = useState({ active: false, index: 0 });
@@ -12,8 +13,16 @@ export default function Home({ content }) {
     <main className={styles.main}>
       <AnimatedHomeHeader />
       <div className={styles.body}>
-        <h2>{content.titulo}</h2>
-        <h2>{content.texto}</h2>
+        <AnimatedDiv>
+
+     
+        <h2 className={styles.title}>{content.titulo}</h2>
+        </AnimatedDiv>
+        <AnimatedDiv delay={0.1}>
+
+
+        <h2 className={styles.text}>{content.texto}</h2>
+        </AnimatedDiv>
         {content.tratamientos.map((project, index) => {
           return (
             <Project

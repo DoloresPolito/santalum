@@ -32,7 +32,7 @@ export default function Project({ index, project, setModal }) {
         aria-label={`Ir a ${project.titulo}`}
       />
       <h2>{project.titulo}</h2>
-      <p>Design & Development</p>
+      <p>Subtitulo del tratamiento</p>
       <motion.div
         variants={anim}
         animate={isActive ? "open" : "closed"}

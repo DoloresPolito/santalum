@@ -76,7 +76,7 @@ function ColorChangeOnScrollGsap() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
@@ -85,7 +85,7 @@ function ColorChangeOnScrollGsap() {
           <HomeSectionSoft />
          
         </div>
-      </section>
+      </section> */}
 
       {/* <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
