@@ -7,8 +7,8 @@ import Lenis from "lenis";
 // import Loop from "@/components/Loop";
 // import FaqsSection from "@/components/FaqsSection";
 // import Treatments from "@/components/Treatments";
-// import SwiperHero from "@/components/SwiperHero";
-// import { AnimatedHomeHeader } from "@/structure/NavbarToia";
+import SwiperHeroNew from "@/components/SwiperHeroNew";
+import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 // import styles from "./styles.module.scss";
 // import Carrousel from "@/components/Carrousel";
 
@@ -34,8 +34,10 @@ export default function Home() {
 
   return (
  
-     <div className={styles.main}>  {/*
-        <AnimatedHomeHeader />
+     <div className={styles.main}> 
+
+      {/*
+       
         <Intro />
         <CanvasVideo/>
         <Loop />
@@ -44,7 +46,9 @@ export default function Home() {
         <Section />
    
 
+        
       <FaqsSection /> */}
+      <SwiperHeroNew/>
       <ColorChangeOnScrollGsap/>
       </div>
    

@@ -7,7 +7,6 @@ import styles from "./styles.module.scss";
 export default function TreatmentPage({ params }) {
   const { tratamiento } = params;
 
-  console.log("PARAMS EN CARA", params)
 
   const data = cara[0].tratamientos.find((item) => item.id === tratamiento);
 

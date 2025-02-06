@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Scrollbar from "smooth-scrollbar";
 import Intro from "../../structure/Intro";
-// import HomeSectionSoft from "../HomeSectionSoft";
+import HomeSectionSoft from "../HomeSectionSoft";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 // import Loop from "@/components/Loop";
 import FaqsSection from "@/components/FaqsSection";
@@ -64,9 +64,9 @@ function ColorChangeOnScrollGsap() {
   }, []);
 
   return (
-    <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden">
-         <AnimatedHomeHeader />
-      <section
+    <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden z-50">
+         {/* <AnimatedHomeHeader /> */}
+      {/* <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32 overflow-x-hidden"
         data-bgcolor="#39442b"
         data-textcolor="#ffffff"
@@ -74,7 +74,7 @@ function ColorChangeOnScrollGsap() {
         <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
           <Intro />
         </div>
-      </section>
+      </section> */}
 
       <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
@@ -82,7 +82,7 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="#d0b6c0"
       >
         <div className="w-full flex items-center justify-around">
-          {/* <HomeSectionSoft /> */}
+          <HomeSectionSoft />
         </div>
       </section>
 

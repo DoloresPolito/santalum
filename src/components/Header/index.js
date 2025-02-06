@@ -33,8 +33,11 @@ const menu = {
 };
 
 
+
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
+
+
 
   return (
     <div className={styles.header}>
@@ -42,7 +45,8 @@ export default function Index() {
         <Link href="https://wa.me/34611833062"    target="_blank"
               rel="noopener noreferrer">
 
-        <BookButton text="contactanos" />
+
+        <BookButton text="contactanos" color="#39442b" hoverB="#f8fb9c" hoverC="#39442b"/>
         </Link>
       </div>
       <motion.div

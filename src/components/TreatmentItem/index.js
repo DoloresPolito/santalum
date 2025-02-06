@@ -83,9 +83,9 @@ export default function TreatmentItem({ data }) {
               
               )}
             </div>
-            </AnimatedDiv>
+            </AnimatedDiv>   
  
-            <BookButton text="consultar"/>
+            <BookButton text="consultar" color="#f0ebe3" hoverB="#f8fb9c" hoverC="#39442b"/>
           </div>
    
    

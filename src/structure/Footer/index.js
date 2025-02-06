@@ -10,9 +10,6 @@ import mail from "../../../public/icons/mail.png";
 import logo from "../../../public/logo/fondoverde.png"
 
 
-// import blue from "../../../public/icons/blue.png";
-// import white from "../../../public/icons/white.png";
-
 import BookButton from "@/components/BookButton";
 export default function NewFooter() {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,11 +22,7 @@ export default function NewFooter() {
               <Image src={logo} alt="logo"/>
               <h1>Santalum</h1>
             </div>
-            {/* <div className={styles.leftcontainer}>
-              <p>Nosotros</p>
-              <p>Cuerpo</p>
-              <p>Capilar</p>
-            </div> */}
+
           </div>
           <div className={styles.top}>
             <div className={styles.cont1}>
@@ -42,11 +35,14 @@ export default function NewFooter() {
             <div className={styles.cont2}>
               <div className={styles.line1}>
         
-                <Link href="/" target="_blank">
-                  <p>Tratamientos</p>
+                <Link href="/cara" >
+                  <p>Cara</p>
                 </Link>
-                <Link href="/nosotros">
-                  <p>Nosotros</p>
+                <Link href="/cuerpo">
+                  <p>Cuerpo</p>
+                </Link>
+                <Link href="/capilar" >
+                  <p>Capilar</p>
                 </Link>
        
               </div>
@@ -59,7 +55,9 @@ export default function NewFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <BookButton />
+
+
+                <BookButton text="contactanos" color="#f0ebe3" hoverB="#f8fb9c" hoverC="#39442b"/>
               </Link>
               <div className={styles.socialmediacontainer}>
                 <Link

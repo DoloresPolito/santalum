@@ -27,6 +27,24 @@
       font-family: "HattonLight";
       color: #62685e;
     }
+
+    .textContainer {
+      position: relative;
+      display: inline-block; // Solo ocupa el ancho del texto
+    }
+  
+    .underline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.2vh;
+      background-color: #62685e;
+      width: 0;
+    }
+  
+    .active .underline {
+      background-color: #62685e;
+    }
   }
   .footer {
     display: flex;

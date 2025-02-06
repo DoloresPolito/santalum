@@ -39,7 +39,7 @@ export default function SwiperHeroNew() {
   return (
     
     <div className={styles.container}>
-
+      <AnimatedHomeHeader />
       <div className={styles.carouselcontainer}>
  
         <div className={styles.carouselcontent}>
