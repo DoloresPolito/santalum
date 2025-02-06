@@ -8,6 +8,8 @@ import Intro from "../../structure/Intro";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 // import Loop from "@/components/Loop";
 import FaqsSection from "@/components/FaqsSection";
+import ReviewsSection from "@/structure/ReviewSection";
+import Work3 from "@/structure/Work3";
 import Footer from "@/structure/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,14 +92,15 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="#c2c1b3"
       >
         <div className="w-creen flex items-center justify-around">
-          {/* <Loop/> */}
+        <Work3/>
         </div>
       </section>
 
       <section
         className="min-h-screen w-screen relative "
-        data-bgcolor="#fdfdf1"
-        data-textcolor="#d0b6c0"
+  
+        data-bgcolor="#f8fb9c"
+        data-textcolor="#ffffff"
       >
         <div className="w-full flex items-center justify-around">
           <FaqsSection />
@@ -105,12 +108,12 @@ function ColorChangeOnScrollGsap() {
       </section>
 
       <section
-        className="min-h-screen w-screen relative flex items-center justify-center px-32"
-        data-bgcolor="#f8fb9c"
-        data-textcolor="#39442b"
+        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
+        data-bgcolor="#fdfdf1"
+        data-textcolor="#d0b6c0"
       >
-        <div className="w-full  text-[9vw] leading-[1.1] tracking-tighter ">
-          <span className={``}>End Of Scroll</span>
+        <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
+          <ReviewsSection/>
         </div>
       </section>
       <Footer />

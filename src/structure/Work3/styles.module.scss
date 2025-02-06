@@ -1,0 +1,102 @@
+.section {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    z-index: -1;
+    background-color: #f4f0ea;
+  
+    @media only screen and (max-width: 750px) {
+      height: auto;
+    }
+  
+    .container {
+      display: flex;
+      width: 100%;
+      height: auto;
+  
+      @media only screen and (max-width: 750px) {
+        flex-direction: column; // Cambiar a disposición vertical
+      }
+    }
+  
+    .item {
+      flex: 1;
+      height: 80vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      height: 100%;
+  
+      @media only screen and (max-width: 750px) {  
+        width: 100%; // Cambiar el ancho a 100% en pantallas pequeñas
+        height: 55vh; // Altura en pantallas pequeñas
+        flex-direction: column; // Cambiar a disposición vertical
+      }
+  
+      img {
+        position: relative;
+        width: 100%; // Ajustar la imagen al 100% del contenedor
+        height: auto; // Permitir que la altura se ajuste automáticamente
+        min-height: 80vh;
+        min-width: 33.5vw;
+        @media only screen and (max-width: 750px) {
+          object-fit: cover; // Cubrir el contenedor sin distorsionar
+          max-height: 55vh; // Limitar la altura máxima
+          min-height: auto;
+          min-width: auto;
+          width: 100vw;
+        }
+       
+          
+      
+      }
+
+  
+      .textcontainer {
+        position: absolute;
+        max-height: 70vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center !important;
+  
+        @media only screen and (max-width: 750px) {
+          max-height: 45vh;
+        }
+  
+        h2 {
+          margin-bottom: 1rem;
+          color: #62685e;
+  font-family: "HattonLight";
+          font-size: 6vh;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 0px 7vw;
+          // color: white;
+  
+          @media only screen and (max-width: 750px) {
+            font-size: 5vh;
+          }
+        }
+  
+        // button {
+        //   background-color: white;
+        //   border-radius: 30px;
+        //   padding: 10px 20px;
+        //   margin-top: 3vh;
+        //   border: none;
+        //   cursor: pointer;
+  
+        //   &:hover {
+        //     opacity: 0.8;
+        //     background-color: black;
+        //     color: white;
+        //   }
+        // }
+      }
+    }
+  }

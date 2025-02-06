@@ -9,6 +9,7 @@
   margin: 0 auto;
   z-index: 2;
   margin-top: -20vh;
+background-color: #505d40;
 
   @media only screen and (max-width: 800px) {
     height: auto;
@@ -163,11 +164,11 @@
       }
 
       button{
-        border: 0.05vh solid #fdfdf1;
-        padding: 1vh 2vh;
-        border-radius: 4vh;
+        // border: 0.05vh solid #fdfdf1;
+        // padding: 1vh 2vh;
+        // border-radius: 4vh;
         margin-top: 6vh;
-        color:#fdfdf1;
+        // color:#fdfdf1;
         height: 5vh;
         width: 30vh;
         p{
@@ -177,11 +178,11 @@
         }
     
 
-        &:hover{
-          background-color: #f8fb9c;
-          border: 0.05vh solid #f8fb9c;
-          color:#39442b;
-        }
+        // &:hover{
+        //   background-color: #f8fb9c;
+        //   border: 0.05vh solid #f8fb9c;
+        //   color:#39442b;
+        // }
       }
     }
   }

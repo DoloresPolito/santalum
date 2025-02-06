@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
 import Link from "next/link";
+import BookButton from "../BookButton";
 
 
 export default function SwiperHero() {
@@ -106,7 +107,8 @@ const Slide = ({ slide }) => {
               <p>{slide.text}</p>
             </div>
             <Link href={slide.link}>
-            <button><p>VER TRATAMIENTOS</p></button>
+              <BookButton text="ver tratamientos"/>
+            {/* <button><p>VER TRATAMIENTOS</p></button> */}
             </Link>
            
           </div>
