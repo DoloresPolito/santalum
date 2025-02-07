@@ -8,7 +8,6 @@ import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import BookButton from "../BookButton";
-import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 export default function SwiperHeroNew() {
   const slides = [
     {
@@ -39,7 +38,6 @@ export default function SwiperHeroNew() {
   return (
     
     <div className={styles.container}>
-      <AnimatedHomeHeader />
       <div className={styles.carouselcontainer}>
  
         <div className={styles.carouselcontent}>
@@ -87,9 +85,14 @@ const Slide = ({ slide }) => {
           <div className={styles.text} data-swiper-parallax="-100">
             <p>{slide.text}</p>
           </div>
+        
+
+      
           <Link href={slide.link}>
-            <BookButton text="Ver tratamientos" />
+            <BookButton text="Ver tratamientos" color="#fdfdf1" hoverB="#f8fb9c" hoverC="#39442b" />
+
           </Link>
+        
         </div>
       </div>
     </div>

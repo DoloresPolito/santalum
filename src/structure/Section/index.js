@@ -12,6 +12,11 @@ export default function Section() {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
+
+    <>
+    <div className={styles.firstcontainer}>
+      
+    </div>
     <div
       ref={container}
       className={styles.section}
@@ -38,5 +43,6 @@ export default function Section() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }

@@ -51,7 +51,7 @@ export default function Project({ index, project, setModal, category }) {
         animate={isActive ? "open" : "closed"}
         className={styles.imgContainer}
       >
-        <img src={`/images/nuevas/${project.img}`}></img>
+        <img src={`/${project.img}`}></img>
       </motion.div>
 
       <motion.div

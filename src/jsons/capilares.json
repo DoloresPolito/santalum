@@ -14,7 +14,8 @@
           "Recuperación de la densidad capilar."
         ],
         "procedimiento": "Técnicas avanzadas de trasplante capilar.",
-        "precio": "Varía según la técnica y las áreas a tratar."
+        "precio": "Varía según la técnica y las áreas a tratar.",
+        "img":"images/capilar/implante.png"
       },
       {
         "id": "bioestimulación-capilar",
@@ -25,7 +26,8 @@
           "Mejora la salud del cuero cabelludo."
         ],
         "procedimiento": "Aplicación de plasma rico en plaquetas en el cuero cabelludo.",
-        "precio": "Varía según el número de sesiones."
+        "precio": "Varía según el número de sesiones.",
+        "img":"images/capilar/bioestimulacion.png"
       },
       {
         "id": "mesoterapia-capilar",
@@ -36,7 +38,8 @@
           "Tratamiento efectivo para la alopecia."
         ],
         "procedimiento": "Microinyecciones de medicamentos en el cuero cabelludo.",
-        "precio": "Varía según la cantidad de sesiones necesarias."
+        "precio": "Varía según la cantidad de sesiones necesarias.",
+        "img":"images/capilar/mesoterapia.png"
       }
 
 

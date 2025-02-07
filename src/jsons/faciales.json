@@ -17,7 +17,7 @@
         ],
         "procedimiento": "Se realiza con anestesia local y productos de relleno, a veces acompañados de hilos.",
         "precio": "Desde $1,000",
-        "img":"3.jpg"
+        "img":"images/cara/rinomodelacion.png"
       },
       {
         "id": "labios",
@@ -31,7 +31,7 @@
         ],
         "procedimiento": "Se puede realizar con anestesia tópica o troncular.",
         "precio": "Desde $500",
-        "img":"4.jpg"
+        "img":"images/cara/labios.png"
       },
       {
         "id": "orejas-bolsas",
@@ -45,7 +45,7 @@
         ],
         "procedimiento": "Se utiliza cosmética adecuada, carboxiterapia, ácido hialurónico, entre otros tratamientos.",
         "precio": "Desde $400",
-        "img":"9.jpg"
+        "img":"images/cara/ojerasbolsas.png"
       },
       {
         "id": "pomulos-menton",
@@ -59,7 +59,7 @@
         ],
         "procedimiento": "Se utiliza ácido hialurónico, hidroxiapatita cálcica o prótesis malas.",
         "precio": "Desde $600",
-        "img":"10.jpg"
+        "img":"images/cara/pomulosmenton.png"
       },
       {
         "id": "vitaminas-faciales",
@@ -73,7 +73,7 @@
         ],
         "procedimiento": "Se realiza con mesoterapia bajo anestesia tópica.",
         "precio": "135€ por sesión",
-        "img":"11.jpg"
+        "img":"images/cara/vitaminasfaciales.png"
       },
       {
         "id": "revitalizacion-dermica",
@@ -86,7 +86,7 @@
         ],
         "procedimiento": "Se utiliza un vial de FILORGA® NCTF 135HA, que combina ácido hialurónico y un cóctel de vitaminas, aminoácidos, minerales, ácidos nucleicos y coenzimas.",
         "precio": "195€ por sesión",
-        "img":"14.jpg"
+        "img":"images/cara/revitalizaciondermica.png"
       },
       {
         "id": "bionutrilift",
@@ -100,7 +100,7 @@
         ],
         "procedimiento": "En la primera sesión, se combina 1 vial de ácido hialurónico de baja reticulación con 1 ampolla de NCTF, un complemento polirevitalizante que incluye vitaminas, enzimas, minerales y antioxidantes.",
         "precio": "350€ por sesión",
-        "img":"15.jpg"
+        "img":"images/cara/bionutrilift.png"
       },
       {
         "id": "hidrobooster-dorothy",
@@ -114,7 +114,7 @@
         ],
         "procedimiento": "Se realiza con un ácido hialurónico reticulado de alta calidad, con resultados duraderos de aproximadamente 4 meses.",
         "precio": "300€ por sesión",
-        "img":"15.jpg"
+        "img":"images/cara/dorothy.png"
       },
       {
         "id": "armonización-facial",
@@ -127,7 +127,7 @@
         ],
         "procedimiento": "Uso combinado de cánula y aguja, según la zona a tratar.",
         "precio": "Determinado por valoración previa",
-        "img":"15.jpg"
+        "img":"images/cara/armonizacionfacial.png"
       },
       {
         "id": "peeling",
@@ -141,7 +141,7 @@
         ],
         "procedimiento": "Se realiza con ácido tranexámico, mandélico, azelaico, glicólico, o productos especializados.",
         "precio": "85€ por sesión",
-        "img":"15.jpg"
+        "img":"images/cara/peeling.png"
       },
       {
         "id": "cuello-escote",
@@ -155,7 +155,7 @@
         ],
         "procedimiento": "Sesiones necesarias: 2, con un mes de intervalo.",
         "precio": "275€ por sesión",
-        "img":"15.jpg"
+        "img":"images/cara/cuelloescote.png"
       },
       {
         "id": "acido-hialuronico",
@@ -168,7 +168,7 @@
         ],
         "procedimiento": "Técnica mixta de cánula y aguja según la zona a tratar.",
         "precio": "Valoración personalizada",
-        "img":"15.jpg"
+        "img":"images/cara/acidohialuronico.png"
       }
 
     ]}

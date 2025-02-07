@@ -15,7 +15,7 @@
         ],
         "procedimiento": "Inyecciones intradérmicas en las zonas afectadas.",
         "precio": "Varía según el número de sesiones requeridas.",
-        "img":"1.jpg"
+        "img":"images/cuerpo/mesoterapia.png"
       },
       {
         "id": "intralipoterapia",
@@ -28,7 +28,7 @@
         ],
         "procedimiento": "Inyección de solución específica en áreas con grasa localizada.",
         "precio": "Varía según la cantidad de sesiones necesarias.",
-        "img":"2.jpg"
+        "img":"images/cuerpo/intralipoterapia.png"
       },
       {
         "id": "asesoramiento-nutricional",
@@ -41,7 +41,7 @@
         ],
         "procedimiento": "Valoración personalizada para crear el plan adecuado.",
         "precio": "Varía según el plan personalizado.",
-        "img":"5.jpg"
+        "img":"images/cuerpo/asesoramientonutricional.png"
       },
       {
         "id": "presoterapia",
@@ -54,7 +54,7 @@
         ],
         "procedimiento": "Aplicación de presión positiva en las áreas afectadas.",
         "precio": "Varía según las necesidades del paciente.",
-        "img":"7.jpg"
+        "img":"images/cuerpo/presoterapia.png"
       },
       {
         "id": "carboxiterapia",
@@ -67,7 +67,7 @@
         ],
         "procedimiento": "Inyecciones superficiales de dióxido de carbono debajo de la piel.",
         "precio": "Varía según el número de sesiones.",
-        "img":"8.jpg"
+        "img":"images/cuerpo/carboxiterapia.png"
       },
       {
         "id": "sueroterapia-corporal",
@@ -80,7 +80,7 @@
         ],
         "procedimiento": "Aplicación de suero con aguja durante 10 minutos en las áreas a tratar.",
         "precio": "Varía según el número de sesiones.",
-        "img":"12.jpg"
+        "img":"images/cuerpo/sueroterapiacorporal.png"
       }
     ]
   }

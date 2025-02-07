@@ -3,8 +3,8 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import image2 from "../../../public/images/nuevas/5.jpg";
-import image3 from "../../../public/images/nuevas/4.jpg";
+import image2 from "../../../public/images/cara/labios.png";
+import image3 from "../../../public/images/cuerpo/extra.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 

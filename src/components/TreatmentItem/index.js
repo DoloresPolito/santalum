@@ -91,7 +91,7 @@ export default function TreatmentItem({ data }) {
    
           <div className={styles.right}>
             <Image
-              src="/images/nuevas/4.jpg"
+              src={`/${data.img}`}
               alt="image"
               width={500}
               height={500}
