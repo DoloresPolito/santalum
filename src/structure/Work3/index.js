@@ -30,12 +30,12 @@ export default function Work3() {
       link: "/capilar",
     },
   ];
-
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={styles.section}>
       <div className={styles.container}>
         {items.map((item) => {
-          const [isHovered, setIsHovered] = useState(false);
+         
 
           return (
             <Link key={item.id} href={item.link} className={styles.fullLink}>
@@ -47,8 +47,8 @@ export default function Work3() {
                   transition: { duration: 0.5, ease: "easeInOut" },
                 }}
                 animate={{ backgroundSize: "100%", opacity: 1 }}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                // onMouseEnter={() => setIsHovered(true)}
+                // onMouseLeave={() => setIsHovered(false)}
               >
                 <AnimatedDiv delay={item.delay}>
                   <Image
