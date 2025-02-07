@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import AnimatedDiv from "../../components/AnimatedDiv";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import BookButton from "@/components/BookButton";
+
 export default function Work3() {
   const items = [
     {
@@ -32,45 +32,52 @@ export default function Work3() {
   ];
 
   return (
-    <>
-      <div className={styles.section}>
-        <div className={styles.container}>
-          {items.map((item) => (
-            <motion.div
-              key={item.id}
-              className={styles.item}
-              initial={{ backgroundSize: "100%", opacity: 1 }}
-              whileHover={{
-                backgroundSize: "105%",
-                transition: { duration: 0.5, ease: "easeInOut" },
-              }}
-              animate={{ backgroundSize: "100%", opacity: 1 }}
-            >
-              <AnimatedDiv delay={item.delay}>
-                <Image
-                  src={item.imageUrl}
-                  alt="work"
-                  height={600}
-                  width={500}
-                  priority
-                />
-              </AnimatedDiv>
+    <div className={styles.section}>
+      <div className={styles.container}>
+        {items.map((item) => {
+          const [isHovered, setIsHovered] = useState(false);
 
-              <div className={styles.textcontainer}>
+          return (
+            <Link key={item.id} href={item.link} className={styles.fullLink}>
+              <motion.div
+                className={styles.item}
+                initial={{ backgroundSize: "100%", opacity: 1 }}
+                whileHover={{
+                  backgroundSize: "105%",
+                  transition: { duration: 0.5, ease: "easeInOut" },
+                }}
+                animate={{ backgroundSize: "100%", opacity: 1 }}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
                 <AnimatedDiv delay={item.delay}>
-                  <h2>{item.title}</h2>
+                  <Image
+                    src={item.imageUrl}
+                    alt="work"
+                    height={600}
+                    width={500}
+                    priority
+                  />
                 </AnimatedDiv>
 
-                <AnimatedDiv delay={item.delay}>
-                  <Link href={item.link}>
-                    <BookButton text="ver más" />
-                  </Link>
-                </AnimatedDiv>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+                <div className={styles.textcontainer}>
+                  <AnimatedDiv delay={item.delay}>
+                    <h2>{item.title}</h2>
+                  </AnimatedDiv>
+
+                  <BookButton
+                    text="ver más"
+                    color="white"
+                    hoverB="#f8fb9c"
+                    hoverC="#39442b"
+                    isHovered={isHovered} // Pasamos el estado de hover al botón
+                  />
+                </div>
+              </motion.div>
+            </Link>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 }
