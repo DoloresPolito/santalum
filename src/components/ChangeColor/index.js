@@ -3,14 +3,9 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Scrollbar from "smooth-scrollbar";
-import Intro from "../../structure/Intro";
-import HomeSectionSoft from "../HomeSectionSoft";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
-import SwiperHeroNew from "@/components/SwiperHeroNew";
-// import Loop from "@/components/Loop";
-import FaqsSection from "@/components/FaqsSection";
-import ReviewsSection from "@/structure/ReviewSection";
-import Work3 from "@/structure/Work3";
+import ContactSection1 from "@/structure/ContactSection1";
+import ContactSection2 from "@/structure/ContactSection2";
 import Footer from "@/structure/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,56 +61,45 @@ function ColorChangeOnScrollGsap() {
 
   return (
     <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden z-50">
-      <AnimatedHomeHeader/>
+      <AnimatedHomeHeader />
       <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
         <div className="w-full flex items-center justify-around">
-          <SwiperHeroNew />
+          <ContactSection1 />
         </div>
       </section>
 
       <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
-        data-bgcolor="#fdfdf1"
-        data-textcolor="#d0b6c0"
-      >
-        <div className="w-full flex items-center justify-around">
-          <HomeSectionSoft />
-        </div>
-      </section>
-
-      <section
-        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
-        data-bgcolor="#3b3825"
-        data-textcolor="#c2c1b3"
+   
+        data-bgcolor="#f8fb9c"
+        data-textcolor="#ffffff"
       >
         <div className="w-creen flex items-center justify-around">
-          <Work3 />
+          <ContactSection2 />
         </div>
       </section>
 
       <section
         className="min-h-screen w-screen relative "
-        data-bgcolor="#f8fb9c"
-        data-textcolor="#ffffff"
+        data-bgcolor="#fdfdf1"
+        data-textcolor="#d0b6c0"
       >
-        <div className="w-full flex items-center justify-around">
-          <FaqsSection />
-        </div>
+        <div className="w-full flex items-center justify-around"></div>
       </section>
 
-      <section
+      {/* <section
         className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
         <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
-          <ReviewsSection />
+
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );
