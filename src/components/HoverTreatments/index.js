@@ -5,7 +5,7 @@ import Project from "@/components/Project";
 // import Modal from "@/components/Modal";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 import AnimatedDiv from "../AnimatedDiv";
-import Background from "../../../public/images/work/fondomiddle2.png";
+import Background from "../../../public/images/work/cuerpohorizontal.png";
 import Image from "next/image";
 export default function Home({ content, category }) {
   // const [modal, setModal] = useState({ active: false, index: 0 });

@@ -60,7 +60,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1vh;
     // border: 1px solid black;
@@ -75,20 +75,32 @@
       opacity: 0.8; /* Reduce la opacidad al pasar el cursor */
     }
 
-    .actionButton {
-      align-self: center;
 
-      padding: 0.5em 1em;
-      background-color: rgba(255, 255, 255, 0.8);
-      border: none;
-      border-radius: 2vh;
-      font-size: 1.6vh;
-      cursor: pointer;
-      z-index: 2;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+    .button{
+      width: auto;
+      height: 6vh;
+      width: 6vh;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-self: flex-end;
     }
+
+    // .actionButton {
+    //   align-self: center;
+
+    //   padding: 0.5em 1em;
+    //   background-color: rgba(255, 255, 255, 0.8);
+    //   border: none;
+    //   border-radius: 2vh;
+    //   font-size: 1.6vh;
+    //   cursor: pointer;
+    //   z-index: 2;
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+    // }
 
     .title {
       position: absolute;
@@ -97,8 +109,9 @@
       font-family: "HattonLight";
       font-size: 2vh;
       text-transform: uppercase;
-      color: white;
+      // color: white;
       z-index: 2;
+
     }
   }
 
