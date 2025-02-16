@@ -1,6 +1,5 @@
 .project {
-  position: relative; /* Para que el Link absoluto se posicione dentro de él */
-  display: flex;
+  position: relative; 
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
@@ -9,6 +8,7 @@
   border-top: 1px solid rgb(201, 201, 201);
   cursor: pointer;
   transition: all 0.2s;
+
 }
 
 .project:last-of-type {
@@ -16,14 +16,10 @@
 }
 
 .project:hover {
-  /* opacity: 0.5; */
-  /* background-color: #a2b8a2; */
   background-color:#f8fb9c
 }
 
-/* .project:hover h2 {
-    transform: translateX(-10px);
-} */
+
 
 .project:hover p {
   transform: translateX(10px);
@@ -98,3 +94,29 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
   } */
+
+
+  @media only screen and (max-width: 800px) {
+    .project{
+      padding: 3vh 2vh 3vh 2vh;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    
+      .imgContainer {
+        display: none !important;
+      }
+
+      .right p{
+
+        margin-right: 0vh;
+        font-size: 2.5vh;
+      }
+
+      .project h2 {
+        font-size: 3vh;
+      }
+    
+  }

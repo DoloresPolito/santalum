@@ -1,0 +1,63 @@
+.introduction {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2000;
+    margin: 0 auto;
+    background-color: var(--text);
+    position: absolute;
+  
+    h2 {
+      font-size: 15vw;
+      color: white;
+      position: absolute;
+      width: 100%;
+      z-index: 5000;
+      line-height: 120%;
+      font-family: "TalismanCompactRegular", sans-serif;
+  
+      @media screen and (max-width: 800px) {
+        font-size: 30vw;
+      }
+    }
+    img{
+        position: absolute;
+        top: 230px;
+        width: 100%;
+        height: calc(100% + 300px);
+        z-index: 5000;
+        height: 100px;
+        width: auto;
+    }
+    svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 300px);
+        path{
+            fill: var(--text);
+  
+        }
+    }
+    p {
+      display: flex;
+      color: var(--background);
+      font-size: 6vh;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-family: "TalismanCompactRegular", sans-serif;
+  
+  
+      @media screen and (max-width: 800px) {
+          font-size: 4vw;
+      }
+  }
+  }

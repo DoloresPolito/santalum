@@ -8,6 +8,7 @@
   z-index: 10;
   margin: 0 auto;
   overflow-x: hidden;
+  background-color: #fdfdf1;
 
   .titles {
     display: flex;
@@ -15,11 +16,14 @@
     justify-content: center;
     align-items: center;
 
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+
     h6 {
-      font-size: 5.5vh;
+      font-size: 5vh;
       font-family: "HattonLight";
       color: #39442b;
-      margin-bottom: 5vh;
+
       width: auto;
       letter-spacing: 1px;
     }
@@ -30,7 +34,7 @@
       font-size: 3.5vh;
       font-weight: 300;
       text-align: center;
-      margin-bottom: 10vh;
+      margin-bottom: 5vh;
     }
 
     .reviewstext {
@@ -52,8 +56,6 @@
   justify-content: center;
   align-items: center;
 
-
-
   // @media only screen and (max-width: 1200px) {
   //   justify-content: center;
   //   width: 70%;
@@ -74,13 +76,13 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #a5a5a5;
-  color: #6a6a6a ;
-  transition: background-color 0.5s ease, color 0.5s ease; 
+  color: #6a6a6a;
+  transition: background-color 0.5s ease, color 0.5s ease;
   &:hover {
-    background-color: #39442b;
-    color:#fdfdf1;
+    background-color: #68796c;
+    color: #fdfdf1;
+
   }
-//   margin: 5px;
 
   @media only screen and (max-width: 1200px) {
     width: 80%;
@@ -104,7 +106,7 @@
 .cardname {
   font-family: "Plus Jakarta Sans", sans-serif;
 
-  font-weight: 300 ;
+  font-weight: 300;
   font-size: 2vh;
   margin-top: 3vh;
   letter-spacing: 0.5px;
@@ -114,12 +116,11 @@
 .cardtext {
   font-family: "Plus Jakarta Sans", sans-serif;
 
-  font-size: 2vh ;
+  font-size: 2vh;
   letter-spacing: 0.5px;
   line-height: 100%;
-  font-weight: 300 ;
+  font-weight: 300;
   text-align: center;
-
 }
 
 .carouselcontainer {
@@ -171,8 +172,6 @@
 .swiperslide {
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .parallax-bg {
@@ -208,38 +207,37 @@
 .customnext {
   border-radius: 50%;
   height: 7vh;
-  width:  7vh;
+  width: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 0.20vh solid #39442b;
+  border: 0.2vh solid #39442b;
   cursor: pointer;
   &:hover {
     background-color: #f8fb9c; /* Color de fondo al hacer hover */
   }
   svg {
-    width: 5vh; 
+    width: 5vh;
     height: 5vh;
   }
 }
 
 .customprev {
-    border-radius: 50%;
-    height: 7vh;
-    width:  7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    border: 0.20vh solid #39442b;
+  border-radius: 50%;
+  height: 7vh;
+  width: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.2vh solid #39442b;
   &:hover {
-    background-color: #f8fb9c; 
+    background-color: #f8fb9c;
   }
   svg {
     transform: rotate(180deg);
-    width: 5vh; 
+    width: 5vh;
     height: 5vh;
-
   }
 }

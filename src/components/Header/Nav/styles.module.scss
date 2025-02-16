@@ -8,10 +8,17 @@
   background-color: #f8fb9c;
   z-index: 10000;
   border-radius: 2vh;
-
   margin-top: -1vh;
   margin-right: 3vh;
 
+  @media only screen and (max-width: 480px) {
+
+    width: 50vh;
+    align-self: flex-end;
+    right: 0;
+    padding: 5vh 2vh 5vh 2vh;
+
+  }
 
 
   .body {
@@ -26,6 +33,10 @@
       font-size: 5.5vh;
       font-family: "HattonLight";
       color: #62685e;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 4vh;
+      }
     }
 
     .textContainer {

@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 const anim = {
   initial: { width: 0 },
@@ -51,7 +52,12 @@ export default function Project({ index, project, setModal, category }) {
         animate={isActive ? "open" : "closed"}
         className={styles.imgContainer}
       >
-        <img src={`/${project.img}`}></img>
+        <Image
+          src={`/${project.img}`}
+          alt="tratamiento"
+          width={500}
+          height={300}
+        />
       </motion.div>
 
       <motion.div
@@ -97,6 +103,7 @@ export default function Project({ index, project, setModal, category }) {
           ></path>
         </svg>
       </motion.div>
+      {/* </Link> */}
     </div>
   );
 }

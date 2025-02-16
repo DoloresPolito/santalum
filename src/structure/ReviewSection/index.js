@@ -88,7 +88,7 @@ const ReviewsSection = () => {
     <div className={styles.section} ref={ref}>
       <div className={styles.titles}>
         <AnimatedDiv>
-          <h6 className={`${styles.heading} `}>Reseñas</h6>
+          <h6 className={`${styles.heading} `}>RESEÑAS</h6>
         </AnimatedDiv>
         <h3 className={styles.reviewstitle}>
           Conoce lo que nuestros pacientes piensan de nosotros

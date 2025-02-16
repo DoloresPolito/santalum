@@ -4,7 +4,7 @@ import { useRef } from "react";
 import styles from "./styles.module.scss";
 // import SwiperHero from "@/components/SwiperHero";
 import SwiperHeroNew from "@/components/SwiperHeroNew";
-// import { AnimatedHomeHeader } from "../NavbarToia";
+import { AnimatedHomeHeader } from "../NavbarToia";
 export default function Intro() {
   const container = useRef();
   const { scrollYProgress } = useScroll({
@@ -16,7 +16,7 @@ export default function Intro() {
 
   return (
     <div className={styles.section} ref={container}>
-
+   <AnimatedHomeHeader />
       <SwiperHeroNew/>
     </div>
   );

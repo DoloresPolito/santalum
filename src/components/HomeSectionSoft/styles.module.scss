@@ -1,63 +1,29 @@
 .section {
   width: 100%;
-  height: 150vh;
-  // background-color: #fdfdf1;
+  height: 80vh;
+  background-color: #f8f89e;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  overflow: hidden; 
-z-index: 50;
-position: relative;
+  align-items: center;
+
+
 
   .container {
     width: 90%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 
-    .column1 {
-      display: flex;
-      align-self: flex-end;
-      width: 25%;
-      height: 80%;
-
-      .imagecontainer {
-        height: 30vh;
-        border-radius: 3vh;
-
-        img {
-          width: 40vh;
-          height: 55vh;
-          border-radius: 3vh;
-          margin-top: 10vh;
-          will-change: transform, opacity; // Mejora el rendimiento
-        }
-      }
-
-      .videocontainer {
-        width: 100%; /* Ajustar al contenedor */
-        height: auto;
-        overflow: hidden;
-        border-radius: 10px; /* Opcional, para bordes redondeados */
-      }
-      
-      .video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ajusta el video para cubrir el contenedor */
-        border-radius: 3vh;
-    }
-    }
 
     .column2 {
       display: flex;
-      width: 60%;
+      width: 100%;
       height: 80%;
       flex-direction: column;
       align-items: center;
-      padding: 5vh 15vh;
-      margin-top: -15vh;
+
 
       h3 {
         text-align: center;
@@ -72,41 +38,14 @@ position: relative;
         margin-bottom: 15vh;
         font-family: "HattonLight";
         color: #39442b;
-        font-size: 6vh;
+        font-size: 4vh;
       }
 
       p {
+        font-family: "HattonLight";
         text-align: center;
-      }
-
-      .imagecontainer{
-        border-radius: 3vh;
-        margin-top: 10vh;
-        align-self: flex-end;
-        margin-top: 20vh;
-
-        img{
-            border-radius: 3vh;
-            height: 30vh;
-            width: 50vh;
-            will-change: transform, opacity; // Mejora el rendimiento
-        }
-      }
-    }
-
-    .column3 {
-      display: flex;
-
-      width: 25%;
-      height: 80%;
-      .imagecontainer {
-        height: 40vh;
-        border-radius: 3vh;
-
-        img {
-          border-radius: 3vh;
-          will-change: transform, opacity; // Mejora el rendimiento
-        }
+        font-size: 5vh;
+        max-width: 100vh;
       }
     }
   }

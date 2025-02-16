@@ -10,18 +10,18 @@ import Link from "next/link";
 
 const menu = {
   open: {
-    width: "480px",
+    width: "55vh",
     height: "100vh",
-    top: "-10px",
-    right: "-35px",
+    top: "-1vh",
+    right: "-5vh",
 
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
-    width: "100px",
-    height: "40px",
-    top: "0px",
-    right: "0px",
+    width: "10vh",
+    height: "4vh",
+    top: "0vh",
+    right: "0vh",
 
     transition: {
       duration: 0.75,
