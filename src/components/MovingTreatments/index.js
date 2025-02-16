@@ -14,10 +14,11 @@ const MovingTreatments = ({ relacionados }) => {
       </div>
       <div className={styles.marquee}>
         {relacionados.map((item, index) => (
-          <Link href={`${item.id}`}>
+          <Link href={`${item.id}`}       key={`loop-${index}`}>
             <div
+                key={`loop-${index}`}
               className={styles.item}
-              key={`loop-${index}`}
+          
               style={{ backgroundImage: `url(/${item.img})` }}
             >
               <button className={styles.actionButton}>Ver más</button>
