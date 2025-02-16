@@ -14,20 +14,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     
 
 
     .column2 {
       display: flex;
       width: 100%;
-      height: 80%;
+      height: 100%;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
+      padding-top: 10vh;
 
 
       h3 {
         text-align: center;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
         font-family: "HattonLight";
         color: #39442b;
         font-size: 3vh;
@@ -41,11 +44,14 @@
         font-size: 4vh;
       }
 
-      p {
+      .pcontainer {
         font-family: "HattonLight";
         text-align: center;
         font-size: 5vh;
         max-width: 100vh;
+        margin-bottom: 10vh;
+        line-height: 130%;
+
       }
     }
   }

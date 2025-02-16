@@ -33,7 +33,6 @@ export default function SwiperHeroNew() {
     },
   ];
 
-  const [isMobile, setIsMobile] = useState(false);
 
   return (
     

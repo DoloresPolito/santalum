@@ -160,7 +160,7 @@ export default function Home() {
             <Work3 />
             <Section />
          
-            <MovingTreatments relacionados={relacionados}/>
+            {/* <MovingTreatments relacionados={relacionados}/> */}
             {/* <SwiperHeroNew /> */}
 
        

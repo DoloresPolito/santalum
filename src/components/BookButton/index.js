@@ -11,7 +11,7 @@ const BookButton = ({ text, color, hoverB, hoverC, isHovered }) => {
       style={{
         color: isHovered ? hoverC : color,
         borderColor: isHovered ? hoverB : color,
-        backgroundColor: isHovered ? hoverB : "transparent",
+        backgroundColor: isHovered ? hoverB : "rgba(0, 0, 0, 0)",
       }}
       whileHover={{
         backgroundColor: hoverB,

@@ -106,7 +106,7 @@ const ReviewsSection = () => {
                   prevEl: `.${styles.customprev}`,
                 }}
                 modules={[Parallax, Pagination, Navigation]}
-                slidesPerView={width > medium ? 3.5 : width > 1100 ? 2 : 1}
+                slidesPerView={width > medium ? 3.5 : width > 1000 ? 2 : 1}
         
                 slidesPerGroup={1}
                 spaceBetween={10}

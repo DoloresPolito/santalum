@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import image2 from "../../../public/images/cara/labios.png";
-import image3 from "../../../public/images/cuerpo/extra.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import BookButton from "@/components/BookButton";
+import Link from "next/link"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,6 +37,8 @@ const HomeSectionSoft = () => {
     );
   }, []);
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
@@ -50,12 +51,15 @@ const HomeSectionSoft = () => {
               Adiós a lo genérico.
               <br /> Bienvenidos resultados únicos.
             </h1> */}
-             <p>
+             <p className={styles.pcontainer}>
             Cada persona es única, y en Santalum, diseñamos planes estéticos
             personalizados pensando exclusivamente en ti.
           </p>
           </div>
-         
+          <Link href="/nosotros">
+ 
+         <BookButton text="sobre nosotros" color="#39442b" hoverB="#fdfdf1" hoverC="#39442b"  isHovered={isHovered}/>
+         </Link>
         </div>
 
       </div>
