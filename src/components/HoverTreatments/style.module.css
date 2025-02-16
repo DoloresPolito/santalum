@@ -1,6 +1,7 @@
 .main {
   min-height: 100vh;
   overflow-y: auto !important;
+
 }
 
 
@@ -14,28 +15,45 @@
   min-height: 100vh;
   overflow-y: auto !important;
 
+}
+
+.imagecontainer{
+  position: absolute;
+  top:0;
+  height: 70vh;
+
 
 }
 
-.body {
-  width: 100vw;
-  padding-top: 5vh;
-  padding-bottom: 20vh;
+.imagen{
+  height: 70vh;
+  object-fit: cover;
+  
+}
+
+.titlecontainer{
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
   flex-direction: column;
-  align-items: center;
-  height: auto;
-  overflow-y: auto;
+  
+color:white;
 }
+
+
 
 .title {
-  color: #62685e;
+  /* color: #62685e; */
   font-family: "HattonLight";
   font-size: 5vh;
+  text-align: center;
+
 }
 
 .text {
-  color: #62685e;
+  /* color: #62685e; */
   font-family: "HattonLight";
   font-size: 3vh;
   text-align: center;
@@ -65,4 +83,16 @@
 .text::selection, .title::selection {
   background-color: #39442b;
   color: #fdfdf1;
+}
+
+.body {
+  width: 100vw;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  overflow-y: auto;
+  margin-top: 50vh;
 }
