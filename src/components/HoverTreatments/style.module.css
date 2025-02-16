@@ -1,7 +1,6 @@
 .main {
   min-height: 100vh;
   overflow-y: auto !important;
-
 }
 
 
@@ -38,8 +37,9 @@
   left: 50%;
   transform: translate(-50%, -50%); 
   flex-direction: column;
-  
+  align-items: center;
 color:white;
+width: 90%;
 }
 
 
@@ -75,7 +75,6 @@ color:white;
 
   .text{
     font-size: 2.5vh;
-    max-width: 80vw;
   }
 }
 

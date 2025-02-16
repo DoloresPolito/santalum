@@ -6,7 +6,7 @@
     "srcfija": "/",
     "tratamientos": [
       {
-        "id": "rinomodelación",
+        "id": "rinomodelacion",
         "titulo": "Rinomodelación",
         "subtitulo": "Moldea la nariz sin cirugía con rellenos dérmicos.",
         "descripcion": "La rinomodelación es un tratamiento estético no quirúrgico para corregir pequeños defectos en el dorso, punta o ángulo nasolabial de la nariz, utilizando materiales de relleno como ácido hialurónico o hidroxiapatita cálcica. Es ideal para quienes no desean someterse a cirugía o quienes tienen pequeñas imperfecciones tras una rinoplastia previa.",
@@ -123,7 +123,7 @@
           "relacionados":["rinomodelación", "labios","orejas-bolsas","pomulos-menton","vitaminas-faciales", "revitalizacion-dermica", "peeling"]
         },
         {
-          "id": "armonización-facial",
+          "id": "armonizacion-facial",
           "titulo": "Armonización Facial",
           "subtitulo": "Equilibra y resalta los rasgos de manera natural.",
           "descripcion": "La armonización facial es un conjunto de tratamientos estéticos no invasivos que buscan equilibrar y embellecer el rostro mediante la aplicación de rellenos dérmicos con ácido hialurónico, adaptados a las necesidades específicas de cada paciente.",

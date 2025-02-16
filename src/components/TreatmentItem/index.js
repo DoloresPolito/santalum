@@ -4,7 +4,6 @@ import NewFooter from "@/structure/Footer";
 import Image from "next/image";
 import MovingTreatments from "@/components/MovingTreatments";
 import AnimatedDiv from "../AnimatedDiv";
-import FaqsSection from "../FaqsSection";
 import BookButton from "../BookButton";
 
 export default function TreatmentItem({ data }) {
@@ -94,7 +93,7 @@ export default function TreatmentItem({ data }) {
         </div>
       </div>
       <MovingTreatments relacionados={data.relacionados}/>
-      <FaqsSection background="#fdfdf1" />
+      {/* <FaqsSection background="#fdfdf1" /> */}
       <NewFooter />
     </>
   );

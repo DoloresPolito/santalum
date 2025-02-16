@@ -15,7 +15,8 @@
         ],
         "procedimiento": "Inyecciones intradérmicas en las zonas afectadas.",
         "precio": "Varía según el número de sesiones requeridas.",
-        "img":"images/cuerpo/mesoterapia.png"
+        "img":"images/cuerpo/mesoterapia.png",
+        "relacionados":[ {}]
       },
       {
         "id": "intralipoterapia",
@@ -28,7 +29,8 @@
         ],
         "procedimiento": "Inyección de solución específica en áreas con grasa localizada.",
         "precio": "Varía según la cantidad de sesiones necesarias.",
-        "img":"images/cuerpo/intralipoterapia.png"
+        "img":"images/cuerpo/intralipoterapia.png",
+        "relacionados":[ {}]
       },
       {
         "id": "asesoramiento-nutricional",
@@ -41,7 +43,8 @@
         ],
         "procedimiento": "Valoración personalizada para crear el plan adecuado.",
         "precio": "Varía según el plan personalizado.",
-        "img":"images/cuerpo/asesoramientonutricional.png"
+        "img":"images/cuerpo/asesoramientonutricional.png",
+        "relacionados":[ {}]
       },
       {
         "id": "presoterapia",
@@ -54,7 +57,8 @@
         ],
         "procedimiento": "Aplicación de presión positiva en las áreas afectadas.",
         "precio": "Varía según las necesidades del paciente.",
-        "img":"images/cuerpo/presoterapia.png"
+        "img":"images/cuerpo/presoterapia.png",
+        "relacionados":[ {}]
       },
       {
         "id": "carboxiterapia",
@@ -67,7 +71,8 @@
         ],
         "procedimiento": "Inyecciones superficiales de dióxido de carbono debajo de la piel.",
         "precio": "Varía según el número de sesiones.",
-        "img":"images/cuerpo/carboxiterapia.png"
+        "img":"images/cuerpo/carboxiterapia.png",
+        "relacionados":[ {}]
       },
       {
         "id": "sueroterapia-corporal",
@@ -80,7 +85,8 @@
         ],
         "procedimiento": "Aplicación de suero con aguja durante 10 minutos en las áreas a tratar.",
         "precio": "Varía según el número de sesiones.",
-        "img":"images/cuerpo/sueroterapiacorporal.png"
+        "img":"images/cuerpo/sueroterapiacorporal.png",
+        "relacionados":[ {}]
       }
     ]
   }

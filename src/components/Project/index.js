@@ -66,7 +66,7 @@ export default function Project({ index, project, setModal, category }) {
         animate={isActive ? "visible" : "hidden"}
         className={styles.right}
       >
-        <p> Ver más</p>
+        <p className={styles.buttontext}> Ver más</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

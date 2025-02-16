@@ -1,6 +1,7 @@
 .project {
   position: relative; 
-  flex-direction: row;
+  display: flex;
+  flex-direction: row ;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +10,13 @@
   cursor: pointer;
   transition: all 0.2s;
 
+
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 .project:last-of-type {
@@ -35,7 +43,10 @@
 .project p {
   transition: all 0.4s;
   font-weight: 300;
+
 }
+
+
 
 .project a {
   position: absolute;
@@ -77,12 +88,14 @@
   align-items: center;
   justify-content: center;
   width: auto;
+
 }
 
 .right p {
   font-family: "HattonLight";
   margin-right: 3vh;
   font-size: 3vh;
+  margin-left: 3vh;
 }
 
 /* .verMasButton {
@@ -111,7 +124,7 @@
 
       .right p{
 
-        margin-right: 0vh;
+        /* margin-right: 0vh; */
         font-size: 2.5vh;
       }
 

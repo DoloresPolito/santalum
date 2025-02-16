@@ -15,10 +15,11 @@
         ],
         "procedimiento": "Técnicas avanzadas de trasplante capilar.",
         "precio": "Varía según la técnica y las áreas a tratar.",
-        "img":"images/capilar/implante.png"
+        "img":"images/capilar/implante.png",
+        "relacionados":[ {}]
       },
       {
-        "id": "bioestimulación-capilar",
+        "id": "bioestimulacion-capilar",
         "titulo": "Bioestimulación Capilar (PRP)",
         "descripcion": "Utilizamos técnicas avanzadas con plasma rico en plaquetas para estimular el crecimiento del cabello y mejorar la salud del cuero cabelludo.",
         "beneficios": [
@@ -27,7 +28,8 @@
         ],
         "procedimiento": "Aplicación de plasma rico en plaquetas en el cuero cabelludo.",
         "precio": "Varía según el número de sesiones.",
-        "img":"images/capilar/bioestimulacion.png"
+        "img":"images/capilar/bioestimulacion.png",
+        "relacionados":[ {}]
       },
       {
         "id": "mesoterapia-capilar",
@@ -39,7 +41,8 @@
         ],
         "procedimiento": "Microinyecciones de medicamentos en el cuero cabelludo.",
         "precio": "Varía según la cantidad de sesiones necesarias.",
-        "img":"images/capilar/mesoterapia.png"
+        "img":"images/capilar/mesoterapia.png",
+        "relacionados":[ {}]
       }
 
 
