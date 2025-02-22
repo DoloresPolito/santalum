@@ -5,6 +5,7 @@ import Image from "next/image";
 import MovingTreatments from "@/components/MovingTreatments";
 import AnimatedDiv from "../AnimatedDiv";
 import BookButton from "../BookButton";
+import Link from "next/link";
 
 export default function TreatmentItem({ data, category }) {
 
@@ -76,6 +77,12 @@ export default function TreatmentItem({ data, category }) {
                 })}
               </div>
             </AnimatedDiv>
+
+            <Link href={`mailto:dolores.polito@gmail.com?subject=${encodeURIComponent(data.titulo)}&body=Buenos dias. Quiero mas información sobre este tratamiento: ${encodeURIComponent(data.titulo)} `}>
+
+
+            {/* <Link href="mailto:xxx@gmail.com?subject=Asunto%20del%20Correo&body=Texto%20del%20correo"> */}
+       
             <div className={styles.buttoncontainer}>
               <BookButton
                 text="consultar"
@@ -84,6 +91,7 @@ export default function TreatmentItem({ data, category }) {
                 hoverC="#39442b"
               />
             </div>
+            </Link>
           </div>
 
           <div className={styles.right}>
