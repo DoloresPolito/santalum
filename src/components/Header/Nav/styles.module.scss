@@ -11,12 +11,23 @@
   margin-top: -1vh;
   margin-right: 3vh;
 
+
   @media only screen and (max-width: 480px) {
 
-    width: 50vh;
-    align-self: flex-end;
-    right: 0;
+    width: 95vw;
+    // align-self: flex-end;
+    position: absolute; 
+    top: 0;
+    right: 0; // Lo mantiene pegado al borde derecho
+    margin-right: 1.2vh;
     padding: 5vh 2vh 5vh 2vh;
+
+    // width: 50vh;
+    // position: fixed; // Fija la posición
+    // top: 3.5vh;
+    // right: 1vh; // Asegura que quede alineada con el borde derecho
+    // margin-right: 0; // Evita margen extra que la desplace
+    // padding: 5vh 2vh 5vh 2vh;
 
   }
 

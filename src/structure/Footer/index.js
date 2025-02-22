@@ -61,7 +61,7 @@ export default function NewFooter() {
               </Link>
               <div className={styles.socialmediacontainer}>
                 <Link
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/clinicasantalum?igsh=OXMyY2RnMnF1b3gy&utm_source=qr"
                   target="_blank"
                 >
                   <div className={styles.circle}>

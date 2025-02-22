@@ -10,14 +10,14 @@ export default function Work3() {
   const items = [
     {
       id: 1,
-      title: "Tratamientos de caraa",
+      title: "Tratamientos de cara",
       imageUrl: "/images/work/workcara.jpg",
       delay: 0.3,
       link: "/cara",
     },
     {
       id: 2,
-      title: "Tratamientos de cuerpoo",
+      title: "Tratamientos de cuerpo",
       imageUrl: "/images/work/workcuerpo.jpg",
       delay: 0.5,
       link: "/cuerpo",

@@ -22,14 +22,14 @@ export const links = [
 ]
 
 export const footerLinks = [
-    // {
-    //     title: "Facebook",
-    //     href: "/"
-    // },
-    // {
-    //     title: "Instagram",
-    //     href: "/"
-    // },
+    {
+        title: "Facebook",
+        href: "https://www.facebook.com/profile.php?id=100064674744980"
+    },
+    {
+        title: "Instagram",
+        href: "https://www.instagram.com/clinicasantalum?igsh=OXMyY2RnMnF1b3gy&utm_source=qr"
+    },
     {
         title: "Email",
         href: "mailto:correo@ejemplo.com"
