@@ -6,9 +6,8 @@ import MovingTreatments from "@/components/MovingTreatments";
 import AnimatedDiv from "../AnimatedDiv";
 import BookButton from "../BookButton";
 
-export default function TreatmentItem({ data }) {
+export default function TreatmentItem({ data, category }) {
 
-  console.log("data en treatment item", data)
   return (
     <>
       <div className={styles.section}>
@@ -92,7 +91,7 @@ export default function TreatmentItem({ data }) {
           </div>
         </div>
       </div>
-      <MovingTreatments relacionados={data.relacionados}/>
+      <MovingTreatments category={category}/>
       {/* <FaqsSection background="#fdfdf1" /> */}
       <NewFooter />
     </>

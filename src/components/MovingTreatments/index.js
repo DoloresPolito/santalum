@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import cara from "../../jsons/faciales.json";
+import cuerpo from "../../jsons/corporales.json";
+import capilar from "../../jsons/capilares.json";
 
-const MovingTreatments = ({ relacionados }) => {
+const MovingTreatments = ({ category }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [relatedTreatments, setRelatedTreatments] = useState([]);
+
+  useEffect(() => {
+    switch (category) {
+      case "cara":
+        setRelatedTreatments(cara[0].tratamientos);
+        break;
+      case "cuerpo":
+        setRelatedTreatments(cuerpo[0].tratamientos);
+        break;
+      case "capilar":
+        setRelatedTreatments(capilar[0].tratamientos);
+        break;
+      default:
+        setRelatedTreatments([]);
+    }
+  }, [category]);
 
   return (
     <div className={styles.loopSection}>
@@ -12,10 +32,9 @@ const MovingTreatments = ({ relacionados }) => {
         <h2>TRATAMIENTOS RELACIONADOS</h2>
       </div>
       <div className={styles.marquee}>
-        {relacionados.map((item, index) => (
+      {[...relatedTreatments, ...relatedTreatments].map((item, index) => (
           <Link href={`${item.id}`} key={`loop-${index}`}>
             <div
-              key={`loop-${index}`}
               className={styles.item}
               style={{ backgroundImage: `url(/${item.img})` }}
               onMouseEnter={() => setHoveredIndex(index)}
@@ -24,12 +43,11 @@ const MovingTreatments = ({ relacionados }) => {
               <div className={styles.title}>{item.titulo}</div>
               <motion.button
                 className={styles.button}
-                animate={{
-                  backgroundColor: hoveredIndex === index ? "#f8f89e" : "#39442b",
-                  borderColor: hoveredIndex === index ? "#39442b" : "#f8f89e",
-                  color: hoveredIndex === index ? "#39442b" : "#f8f89e",
+                style={{
+                  backgroundColor: "#f8f89e", // Siempre amarillo
+                  borderColor: "#39442b",
+                  color: "#39442b",
                 }}
-                transition={{ duration: 0.3 }}
               >
                 <motion.svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +56,7 @@ const MovingTreatments = ({ relacionados }) => {
                   viewBox="0 0 16 20"
                   fill="none"
                   animate={{
-                    rotate: hoveredIndex === index ? -45 : 0, // Rota 45° en hover
-                    fill: hoveredIndex === index ? "#f8f89e" : "#f8f89e",
+                    rotate: hoveredIndex === index ? -45 : 0, // Solo rota en hover
                   }}
                   transition={{ duration: 0.3 }}
                 >
@@ -60,3 +77,4 @@ const MovingTreatments = ({ relacionados }) => {
 };
 
 export default MovingTreatments;
+

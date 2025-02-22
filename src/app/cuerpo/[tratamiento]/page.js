@@ -21,7 +21,7 @@ export default function TreatmentPage({ params }) {
       <div className={styles.section}>
         <AnimatedHomeHeader />
 
-        <TreatmentItem data={data} />
+        <TreatmentItem data={data}category="cuerpo" />
 
 
       </div>

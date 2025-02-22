@@ -4,6 +4,10 @@
     "texto": "Tratamientos corporales diseñados para esculpir, tonificar y mejorar la apariencia física, utilizando técnicas avanzadas que garantizan resultados naturales y efectivos.",
     "srcfija": "/",
     "tratamientos": [
+
+
+
+
       {
         "id": "mesoterapia-corporal",
         "titulo": "Mesoterapia Corporal",
@@ -16,8 +20,12 @@
         "procedimiento": "Inyecciones intradérmicas en las zonas afectadas.",
         "precio": "Varía según el número de sesiones requeridas.",
         "img":"images/cuerpo/mesoterapia.png",
-        "relacionados":[ {}]
+        "relacionados":[ ]
       },
+
+
+
+
       {
         "id": "intralipoterapia",
         "titulo": "Intralipoterapia",
@@ -30,8 +38,16 @@
         "procedimiento": "Inyección de solución específica en áreas con grasa localizada.",
         "precio": "Varía según la cantidad de sesiones necesarias.",
         "img":"images/cuerpo/intralipoterapia.png",
-        "relacionados":[ {}]
+        "relacionados":[ {
+
+
+
+        }]
       },
+
+
+
+
       {
         "id": "asesoramiento-nutricional",
         "titulo": "Asesoramiento Nutricional",
@@ -46,6 +62,10 @@
         "img":"images/cuerpo/asesoramientonutricional.png",
         "relacionados":[ {}]
       },
+
+
+
+
       {
         "id": "presoterapia",
         "titulo": "Presoterapia",
@@ -60,6 +80,10 @@
         "img":"images/cuerpo/presoterapia.png",
         "relacionados":[ {}]
       },
+
+
+
+
       {
         "id": "carboxiterapia",
         "titulo": "Carboxiterapia",
@@ -74,6 +98,10 @@
         "img":"images/cuerpo/carboxiterapia.png",
         "relacionados":[ {}]
       },
+
+
+
+
       {
         "id": "sueroterapia-corporal",
         "titulo": "Sueroterapia Corporal",
@@ -88,6 +116,9 @@
         "img":"images/cuerpo/sueroterapiacorporal.png",
         "relacionados":[ {}]
       }
+
+
+
     ]
   }
 ]
