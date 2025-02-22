@@ -36,6 +36,7 @@ export default function Section() {
               fill
               alt="image"
               style={{ objectFit: "cover" }}
+              priority="true"
             />
           </motion.div>
         </div>

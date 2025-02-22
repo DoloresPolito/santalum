@@ -56,7 +56,7 @@ export default function Work3() {
                     alt="work"
                     height={600}
                     width={500}
-                    priority
+                    priority="true"
                   />
                 </AnimatedDiv>
 

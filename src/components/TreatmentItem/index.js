@@ -87,7 +87,7 @@ export default function TreatmentItem({ data, category }) {
           </div>
 
           <div className={styles.right}>
-            <Image src={`/${data.img}`} alt="image" width={500} height={500} />
+            <Image src={`/${data.img}`} alt="image" width={500} height={500}  priority="true"/>
           </div>
         </div>
       </div>

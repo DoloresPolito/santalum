@@ -6,7 +6,7 @@ import "../styles/fonts.css";
 
 export const metadata = {
   title: "Santalum",
-  description: "Medicina estética",
+  description: "Medicina estética. Tratamientos faciales, corporales y capilares.",
 };
 
 export default function RootLayout({ children }) {
