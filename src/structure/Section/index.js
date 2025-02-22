@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Background from "../../../public/images/work/fondomiddle2.png";
+import Background from "../../../public/images/work/tratcuerpo.png";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import styles from "./styles.module.scss";
@@ -24,8 +24,8 @@ export default function Section() {
         <div className={styles.relative}>
          
           <p className={styles.texto}>
-            Descubre tu mejor versión con tratamientos personalizados para tu
-            rostro, cuerpo y cabello.
+            Descubre tu <span>mejor versión </span>con tratamientos personalizados para tu
+           <span> rostro, cuerpo y cabello.</span>
           </p>
         </div>
   

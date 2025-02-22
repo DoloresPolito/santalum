@@ -5,16 +5,31 @@ import Project from "@/components/Project";
 // import Modal from "@/components/Modal";
 import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 import AnimatedDiv from "../AnimatedDiv";
-import Background from "../../../public/images/work/cuerpohorizontal.png";
+import BackgroundCara from "../../../public/images/work/tratcara.png";
+import BackgroundCuerpo from "../../../public/images/work/tratcuerpo.png";
+import BackgroundCapilar from "../../../public/images/work/tratcapilar.png";
+
+
 import Image from "next/image";
+
+const backgroundImages = {
+  "cara": BackgroundCara,
+  "cuerpo": BackgroundCuerpo,
+  "capilar": BackgroundCapilar,
+
+  // Agrega más categorías según sea necesario
+};
 export default function Home({ content, category }) {
   // const [modal, setModal] = useState({ active: false, index: 0 });
+
+  const backgroundImage = backgroundImages[category] || CuerpoHorizontal;
+
 
   return (
     <main className={styles.main}>
       <AnimatedHomeHeader />
       <div className={styles.imagecontainer}>
-        <Image src={Background} className={styles.imagen}/>
+        <Image src={backgroundImage} className={styles.imagen} alt="background"/>
         <div className={styles.titlecontainer}>
 
  
