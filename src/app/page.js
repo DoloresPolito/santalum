@@ -174,41 +174,4 @@ export default function Home() {
   );
 }
 
-{
-  /* <ColorChangeOnScrollGsap /> */
-}
-{
-  /* <Intro /> */
-}
-{
-  /* <Section/> */
-}
 
-// import Description from "@/structure/Description";
-// import Section from "@/structure/Section";
-// import Loop from "@/components/Loop";
-// import FaqsSection from "@/components/FaqsSection";
-// import Treatments from "@/components/Treatments";
-// import SwiperHeroNew from "@/components/SwiperHeroNew";
-// import { AnimatedHomeHeader } from "@/structure/NavbarToia";
-// import styles from "./styles.module.scss";
-// import Carrousel from "@/components/Carrousel";
-
-// import MovingTreatments from "@/components/MovingTreatments";
-// import HomeSectionSoft from "@/components/HomeSectionSoft";
-// import AnimationPrueba from "@/components/AnimationsPrueba";
-// import CanvasVideo from "@/components/CanvasVideo";
-{
-  /*  <CanvasVideo/>
-        <Loop />
-        <HomeSectionSoft />
-        <MovingTreatments />
-        <Section />
-   
-
-        
-      <FaqsSection /> */
-}
-{
-  /* <SwiperHeroNew/> */
-}
