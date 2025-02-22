@@ -156,7 +156,7 @@ export default function Home() {
           <>
             <Intro />
             <Loop/>
-            <HomeSectionSoft/>
+            {/* <HomeSectionSoft/> */}
             <Work3 />
             <Section />
          

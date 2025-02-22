@@ -7,6 +7,7 @@ import { AnimatedHomeHeader } from "@/structure/NavbarToia";
 import ContactSection1 from "@/structure/ContactSection1";
 import ContactSection2 from "@/structure/ContactSection2";
 import Footer from "@/structure/Footer";
+import styles from "./styles.module.scss"
 gsap.registerPlugin(ScrollTrigger);
 
 function ColorChangeOnScrollGsap() {
@@ -63,43 +64,34 @@ function ColorChangeOnScrollGsap() {
     <div className="main h-screen w-screen  max-w-full flex flex-col overflow-x-hidden z-50">
       <AnimatedHomeHeader />
       <section
-        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
+        // className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
+        className={styles.section}
         data-bgcolor="#fdfdf1"
         data-textcolor="#d0b6c0"
       >
-        <div className="w-full flex items-center justify-around">
-          <ContactSection1 />
-        </div>
-      </section>
-
-      <section
-        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
-   
-        data-bgcolor="#f8fb9c"
-        data-textcolor="#ffffff"
-      >
-        <div className="w-creen flex items-center justify-around">
+        <div 
+        // className="w-full flex items-center justify-around"
+        className={styles.container}
+        >
           <ContactSection2 />
         </div>
       </section>
 
       <section
-        className="min-h-screen w-screen relative "
-        data-bgcolor="#fdfdf1"
-        data-textcolor="#d0b6c0"
+        // className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
+        className={styles.section}
+        data-bgcolor="#f8fb9c"
+        data-textcolor="#ffffff"
       >
-        <div className="w-full flex items-center justify-around"></div>
+        <div 
+        // className="w-creen flex items-center justify-around w-full"
+        className={styles.container}
+        >
+          <ContactSection1 />
+        </div>
       </section>
 
-      {/* <section
-        className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
-        data-bgcolor="#fdfdf1"
-        data-textcolor="#d0b6c0"
-      >
-        <div className="w-screen  text-[9vw] leading-[1.1] tracking-tighter ">
 
-        </div>
-      </section> */}
       <Footer />
     </div>
   );

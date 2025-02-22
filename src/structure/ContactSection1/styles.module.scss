@@ -5,19 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -20vh;
+
+
 
   .container {
     width: 90%;
     height: 130vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 30vh;
+    justify-content: center;
+
 
     .column1 {
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 100%;
 
       h3 {
@@ -25,7 +27,7 @@
         font-family: "HattonLight";
         color: #39442b;
         font-size: 6vh;
-        max-width: 60vh;
+        // max-width: 60vh;
       }
 
       h2 {
@@ -46,6 +48,16 @@
         margin-bottom: 5vh;
         width: 90%;
         padding: 6vh 0vh;
+      }
+      .seconddiv {
+        border-bottom: 1px solid #39442b;
+        margin-bottom: 5vh;
+        width: 90%;
+        padding: 6vh 0vh;
+
+        .buttoncontainer{
+          margin-top: 3vh;
+        }
       }
 
 

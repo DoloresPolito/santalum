@@ -13,23 +13,21 @@ const ContactSection1 = () => {
     <>
       <div className={styles.section}>
         <div className={styles.container}>
-
-
           <div className={styles.column2}>
-          <AnimatedDiv>
-            <p>
-              Tienes preguntas? Nuestro equipo esta listo para ayudarte si tenes
-              curiosidad por nuestros servicios o simplemente queres consultar
-              por los benefcios que traen.
-            </p>
+            <AnimatedDiv>
+              <h3> Tienes preguntas? </h3>
+              <p>
+                Nuestro equipo esta listo para ayudarte si tenes curiosidad por
+                nuestros servicios o simplemente queres consultar por los
+                benefcios que traen.
+              </p>
             </AnimatedDiv>
             <AnimatedDiv delay={0.2}>
-            <p>Escribinos y te responderemos lo antes posible</p>
+              <p>Escribinos y te responderemos lo antes posible</p>
             </AnimatedDiv>
-            <Contact/>
+            <Contact />
           </div>
         </div>
-
       </div>
     </>
   );

@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     margin-top: -20vh;
+    @media (max-width: 600px) {
+      margin-top: -10vh;
+        }
   
     .container {
       width: 90%;
@@ -13,8 +16,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 30vh;
-  
+      padding-top: 0vh;
      
   
       .column2 {
@@ -23,12 +25,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+            font-family: "HattonLight";
+            color: #39442b;
+            font-size: 6vh;
+            // max-width: 60vh;
+          }
   
         p{
           font-family: "HattonLight";
           color: #39442b;
-          font-size: 2.5vh;
+          font-size: 3.2vh;
           text-align: center;
+          max-width: 120vh;
         }
       }
     }

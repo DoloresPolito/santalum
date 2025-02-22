@@ -38,8 +38,10 @@ const ContactSection1 = () => {
          
               <p>Preguntas Frecuentes</p>
               <p>Chequea las preguntas que nos hacen frecuentemente</p>
-  
-              <BookButton text="FAQS"/>
+  <div className={styles.buttoncontainer}>
+  <BookButton text="FAQS"/>
+  </div>
+             
             </div>
           </div>
 
