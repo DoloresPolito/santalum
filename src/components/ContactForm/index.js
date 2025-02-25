@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-// import { sendEmail } from "@/utils/send-email";
+import { sendEmail } from "@/utils/send-email";
 import styles from "./styles.module.scss";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
 
   function onSubmit(data) {
-    // sendEmail(data);
+    sendEmail(data);
     console.log("data form", data)
     setMessageSent(true)
   }
@@ -20,7 +20,11 @@ const Contact = () => {
   
 
       {messageSent ? (<>
+      <div className={styles.sentcontainer}>
 
+
+<h2>MUCHAS GRACIAS POR TU MENSAJE. <br/> Nos pondremos en contacto a la brevedad.</h2>
+</div>
       </>) : <>
   
       <form onSubmit={handleSubmit(onSubmit)}>

@@ -15,6 +15,7 @@ const HomeSectionSoft = () => {
   useEffect(() => {
     // Animación para el texto que crece
     gsap.fromTo(
+    
       textRef.current,
       {
         scale: 0.8, // Tamaño inicial reducido

@@ -6,6 +6,21 @@
     width: 40vw;
     height: auto;
     margin-top: 20vh;
+
+
+    .sentcontainer{
+      display: flex;
+      align-self: center;
+      justify-self: center;
+
+      h2{
+        margin-bottom: 5vh;
+        margin-top: 0vh;
+        font-family: "HattonLight";
+        color: #39442b;
+        font-size: 4vh;
+      }
+    }
   
     @media only screen and (max-width: 1000px) {
       
