@@ -7,6 +7,7 @@ import AnimatedDiv from "../AnimatedDiv";
 import BookButton from "../BookButton";
 import Link from "next/link";
 
+
 export default function TreatmentItem({ data, category }) {
 
   return (
@@ -100,7 +101,6 @@ export default function TreatmentItem({ data, category }) {
         </div>
       </div>
       <MovingTreatments category={category}/>
-      {/* <FaqsSection background="#fdfdf1" /> */}
       <NewFooter />
     </>
   );

@@ -1,0 +1,71 @@
+.homeCover {
+    width: 100vw;
+    min-height: 80vh;
+    overflow-x:scroll;
+    white-space: nowrap; /* Ensures all content stays in one line */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .homeCover {
+      min-height: 60vh;
+      max-height: 60vh;
+    }
+  }
+  
+  .homeCover::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .scrollContent {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+  }
+  
+  .homeCover .fotoPortada {
+    flex-shrink: 0; /* Evita que se encojan */
+    width: 80vh; /* Ajusta según sea necesario */
+    display: flex;
+    justify-content: center; /* Aligns the image horizontally if the container has extra space */
+    align-items: center;    /* Aligns the image vertically if the container has extra space */
+    height: 60vh;
+    width: 50vh;
+    position: relative;
+    text-align: right;
+    margin-left: 3vh;
+  }
+  
+  @media (max-width: 768px) {
+    .homeCover .fotoPortada {
+      height: 60vh;
+    }
+  }
+  
+  .homeCover .fotoPortada img {
+    height: 100vh;
+    width: 100%; /* Hace que la imagen se ajuste correctamente */
+    height: auto; /* Mantiene proporción */
+    object-fit: cover;
+    margin-left: 3vh;
+  }
+  
+  @media (max-width: 768px) {
+    .homeCover .fotoPortada img {
+      height: 60vh;
+
+    }
+  }
+  
+  .fotoPortada .creditos {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 2rem;
+  }
+  

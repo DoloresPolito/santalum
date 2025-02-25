@@ -6,6 +6,8 @@ import cara from "../../jsons/faciales.json";
 import cuerpo from "../../jsons/corporales.json";
 import capilar from "../../jsons/capilares.json";
 
+import Portada from "../Portada";
+
 const MovingTreatments = ({ category }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [relatedTreatments, setRelatedTreatments] = useState([]);
@@ -31,7 +33,11 @@ const MovingTreatments = ({ category }) => {
       <div className={styles.textcontainer}>
         <h2>TRATAMIENTOS RELACIONADOS</h2>
       </div>
-      <div className={styles.marquee}>
+
+      <Portada category={category}/>
+
+
+      {/* <div className={styles.marquee}>
       {[...relatedTreatments, ...relatedTreatments].map((item, index) => (
           <Link href={`${item.id}`} key={`loop-${index}`}>
             <div
@@ -71,7 +77,7 @@ const MovingTreatments = ({ category }) => {
             </div>
           </Link>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
