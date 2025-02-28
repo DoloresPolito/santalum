@@ -15,8 +15,8 @@ import Footer from "@/structure/Footer";
 import Loop from "@/components/Loop";
 import Portada from "@/components/Portada";
 
-
-
+import Link from "next/link";
+import BookButton from "@/components/BookButton";
 
 export default function Home() {
   useEffect(() => {
@@ -46,24 +46,40 @@ export default function Home() {
         {isLoading ? (
           <Preloader key="preloader" />
         ) : ( */}
-          <>
-            <Intro />
-            <Loop/>
-            <HomeSectionSoft/>
-            <Work3 />
-            <Section />
-         
-            {/* <SwiperHeroNew /> */}
-<Portada/>
-       
-            <FaqsSection />
-            <ReviewsSection />
-          </>
-        {/* )}
+      <>
+        <Intro />
+        <Loop />
+        <HomeSectionSoft />
+        <Work3 />
+        <Section />
+
+        {/* <SwiperHeroNew /> */}
+
+        <FaqsSection />
+        <ReviewsSection />
+      </>
+      {/* )}
       </AnimatePresence> */}
       <Footer />
+
+      <div className={styles.buttoncontainer}>
+        <Link
+          href="https://wa.me/34611833062"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BookButton
+            text="contactanos"
+            color="#39442b"
+            background="#f8fb9c"
+            hoverB="#39442b"
+            hoverC="#f8fb9c"
+
+
+         
+          />
+        </Link>
+      </div>
     </div>
   );
 }
-
-

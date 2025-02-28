@@ -32,7 +32,7 @@ export const footerLinks = [
     },
     {
         title: "Email",
-        href: "mailto:correo@ejemplo.com"
+        href: "mailto:santalumclinicaestetica@gmail.com"
     },
     {
         title: "Chatear por Whatsapp",

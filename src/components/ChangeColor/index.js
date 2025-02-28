@@ -66,7 +66,7 @@ function ColorChangeOnScrollGsap() {
       <section
         // className="min-h-screen w-screen max-w-full relative flex items-center justify-center px-32"
         className={styles.section}
-        data-bgcolor="#fdfdf1"
+        data-bgcolor="#f4f4d6"
         data-textcolor="#d0b6c0"
       >
         <div 

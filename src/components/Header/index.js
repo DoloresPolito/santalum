@@ -32,23 +32,25 @@ const menu = {
   },
 };
 
-
-
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
-
-
   return (
     <div className={styles.header}>
-      <div className={styles.buttoncontainer}>
-        <Link href="https://wa.me/34611833062"    target="_blank"
-              rel="noopener noreferrer">
-
-
-        <BookButton text="contactanos" color="#39442b" hoverB="#f8fb9c" hoverC="#39442b"/>
+      {/* <div className={styles.buttoncontainer}>
+        <Link
+          href="https://wa.me/34611833062"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BookButton
+            text="contactanos"
+            color="#39442b"
+            hoverB="#f8fb9c"
+            hoverC="#39442b"
+          />
         </Link>
-      </div>
+      </div> */}
       <motion.div
         className={styles.menu}
         variants={menu}
@@ -63,10 +65,6 @@ export default function Index() {
           setIsActive(!isActive);
         }}
       />
-
-   
-
-
     </div>
   );
 }

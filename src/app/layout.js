@@ -1,5 +1,5 @@
-import "./globals.css";
 
+import "./globals.css";
 import "../styles/fonts.css";
 // import NewFooter from "@/structure/Footer";
 
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
 
-      
+         
       </body>
     </html>
   );

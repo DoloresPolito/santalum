@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.scss";
 
-const BookButton = ({ text, color, hoverB, hoverC, isHovered }) => {
+const BookButton = ({ text, color, background, hoverB, hoverC, isHovered }) => {
   return (
     <motion.button
       className={styles.button}
@@ -10,8 +10,8 @@ const BookButton = ({ text, color, hoverB, hoverC, isHovered }) => {
       animate={isHovered ? "hover" : "rest"} // Aplica animación si isHovered es true
       style={{
         color: isHovered ? hoverC : color,
-        borderColor: isHovered ? hoverB : color,
-        backgroundColor: isHovered ? hoverB : "rgba(0, 0, 0, 0)",
+        borderColor: isHovered ? hoverB : background,
+        backgroundColor: isHovered ? hoverB : background,
       }}
       whileHover={{
         backgroundColor: hoverB,

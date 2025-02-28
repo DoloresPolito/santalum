@@ -68,7 +68,7 @@ export default function NewFooter() {
                     <Image src={insta} alt="instagram" />
                   </div>
                 </Link>
-                <Link href="mailto:info@coenergysa.com">
+                <Link href="mailto:santalumclinicaestetica@gmail.com">
                   <div className={styles.circle}>
                     <Image src={mail} alt="e-mail" />
                   </div>
