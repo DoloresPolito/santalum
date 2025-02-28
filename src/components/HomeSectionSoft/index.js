@@ -51,7 +51,7 @@ const HomeSectionSoft = () => {
               personalizados pensando exclusivamente en ti.
             </p>
           </div>
-          <Link href="/nosotros">
+          {/* <Link href="/nosotros">
             <BookButton
               text="sobre nosotros"
               color="#39442b"
@@ -59,7 +59,7 @@ const HomeSectionSoft = () => {
               hoverC="#39442b"
               isHovered={isHovered}
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
