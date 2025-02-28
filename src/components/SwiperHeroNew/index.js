@@ -88,7 +88,7 @@ const Slide = ({ slide }) => {
 
       
           <Link href={slide.link}>
-            <BookButton text="Ver tratamientos" color="#fdfdf1" hoverB="#f8fb9c" hoverC="#39442b" />
+            <BookButton text="Ver tratamientos" color="#fdfdf1" background="transparent" border="#fdfdf1" hoverB="#f8fb9c" hoverC="#39442b" />
 
           </Link>
         

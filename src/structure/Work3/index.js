@@ -68,9 +68,13 @@ export default function Work3() {
                   <BookButton
                     text="ver más"
                     color="white"
+                    background="transparent"
+                    border="white"
                     hoverB="#f8fb9c"
                     hoverC="#39442b"
                     isHovered={isHovered} // Pasamos el estado de hover al botón
+
+               
                   />
                 </div>
               </motion.div>
