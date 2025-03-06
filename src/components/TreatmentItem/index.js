@@ -7,9 +7,7 @@ import AnimatedDiv from "../AnimatedDiv";
 import BookButton from "../BookButton";
 import Link from "next/link";
 
-
 export default function TreatmentItem({ data, category }) {
-
   return (
     <>
       <div className={styles.section}>
@@ -79,28 +77,38 @@ export default function TreatmentItem({ data, category }) {
               </div>
             </AnimatedDiv>
 
-            <Link href={`mailto:dolores.polito@gmail.com?subject=${encodeURIComponent(data.titulo)}&body=Buenos dias. Quiero mas información sobre este tratamiento: ${encodeURIComponent(data.titulo)} `}>
+            <Link
+              href={`mailto:dolores.polito@gmail.com?subject=${encodeURIComponent(
+                data.titulo
+              )}&body=Buenos dias. Quiero mas información sobre este tratamiento: ${encodeURIComponent(
+                data.titulo
+              )} `}
+            >
+              {/* <Link href="mailto:xxx@gmail.com?subject=Asunto%20del%20Correo&body=Texto%20del%20correo"> */}
 
-
-            {/* <Link href="mailto:xxx@gmail.com?subject=Asunto%20del%20Correo&body=Texto%20del%20correo"> */}
-       
-            <div className={styles.buttoncontainer}>
-              <BookButton
-                text="consultar"
-                color="#f0ebe3"
-                hoverB="#f8fb9c"
-                hoverC="#39442b"
-              />
-            </div>
+              <div className={styles.buttoncontainer}>
+                <BookButton
+                  text="consultar"
+                  color="#f0ebe3"
+                  hoverB="#f8fb9c"
+                  hoverC="#39442b"
+                />
+              </div>
             </Link>
           </div>
 
           <div className={styles.right}>
-            <Image src={`/${data.img}`} alt="image" width={500} height={500}  priority="true"/>
+            <Image
+              src={`/${data.img}`}
+              alt="image"
+              width={500}
+              height={500}
+              priority="true"
+            />
           </div>
         </div>
       </div>
-      <MovingTreatments category={category}/>
+      <MovingTreatments category={category} />
       <NewFooter />
     </>
   );

@@ -9,12 +9,15 @@
     z-index: 100; 
     display: flex;
     align-items: center;
+   
   }
   
   @media (max-width: 768px) {
     .homeCover {
       min-height: 60vh;
       max-height: 60vh;
+
+
     }
   }
   
@@ -43,7 +46,9 @@
   
   @media (max-width: 768px) {
     .homeCover .fotoPortada {
-      height: 50vh;
+      height: 55vh;
+      width: 45vh;
+
     }
   }
   
@@ -62,7 +67,8 @@
   
   @media (max-width: 768px) {
     .homeCover .fotoPortada img {
-      height: 40vh;
+      height: 50vh;
+      width: 45vh;
 
     }
   }
@@ -99,6 +105,10 @@
     font-size: 2vh;
     text-transform: uppercase;
     z-index: 2;
+
+    @media (max-width: 768px) {
+      left: 3vh;
+    }
 
   }
   
